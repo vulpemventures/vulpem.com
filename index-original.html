@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Vulpem Ventures</title>
+		<title>V</title>
 
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
@@ -20,23 +20,6 @@
 		<script type="text/javascript" src="js/jquery.main.js"></script>
 		<!--[if lte IE 8]>
 		<script type="text/javascript" src="js/libs/ie.js"></script><![endif]-->
-		<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script type="text/javascript">
-			function getBtcValue() {
-			  return axios.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD');
-			}
-
-			function getEthValue() {
-			  return axios.get('https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=USD');
-			}
-
-			axios.all([getBtcValue(), getEthValue()])
-			  .then(axios.spread(function (btc, eth) {
-			    // Both requests are now complete
-			    $('#btc-usd').text('1 BTC = '+ btc.data[0].price_usd +' USD')
-			    $('#eth-usd').text('1 ETH = '+ eth.data[0].price_usd +' USD')
-			}));
-		</script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -74,61 +57,6 @@
 					</div>
 				</div>
 
-				<div class="left-img">
-					<div class="holder-img">
-						<img src="images/bg-3.png" alt="img">
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
-								<div class="holder-text">
-									<h2>Ready for the <br>blockchain revolution ?</h2>
-									<div class="block-text">
-										<p>We can help you designing, developing and launching your product based on cryptoeconomics technologies</p>
-										<div class="holder-link">
-											<a class="link-green" href="index-page.html#">PROJECTS</a>
-											<a class="link-brown" href="index-page.html#">ABOUTUS</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="solutions">
-								<h2>Handcrafted & <br>tailormade solutions</h2>
-								<ul class="list-solutions">
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-1.svg" alt="img">
-										</div>
-										<span>security_audit</span>
-										<p>Launching a token sale is complex. Vulpem take care of reviewing your smart contracts, infrastructure and team security using industry-standard security patterns and best practices. Never trust free WiFi ;)</p>
-									</li>
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-2.svg" alt="img">
-										</div>
-										<span>token_design</span>
-										<p>Vulpem let the founders describe the dynamics of the network that they envision and then reverse engineer the description into a solid Token logic. </p>
-									</li>
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-3.svg" alt="img">
-										</div>
-										<span>dapp_development</span>
-										<p>A Dapp consists of two parts: a frontend and a backend. Vulpem's team have combined more than 40 years of classical development, and build Dapps from day 0.</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
 				<div class="right-img">
 					<div class="holder-img">
 						<img src="images/bg-2.png" alt="img">
@@ -151,17 +79,70 @@
 					</div>
 				</div>
 
-				<div class="wanna" style="background: url(images/project-bg.jpg);">
+				<div class="left-img">
+					<div class="holder-img">
+						<img src="images/bg-3.png" alt="img">
+					</div>
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-12">
-								<h2>Want to start a project?</h2>
-								<a class="btn-us" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
+							<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
+								<div class="holder-text">
+									<h2>Ready for the <br>blockchain revolution ?</h2>
+									<div class="block-text">
+										<p>We can help you designing, developing and launching your product based on cryptoeconomics technologies</p>
+										<div class="holder-link">
+											<a class="link-green" href="index-page.html#">PROJECTS</a>
+											<a class="link-brown" href="index-page.html#">ABOUTUS</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
+				
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="solutions">
+								<h2>Handcrafted & <br>tailormade solutions</h2>
+								<ul class="list-solutions">
+									<li>
+										<div class="holder-img">
+											<img src="images/sv-1.svg" alt="img">
+										</div>
+										<span>security_audit</span>
+										<p>Quisque ac lorem. Maecenas ut sem sed ipsum suscipit malesuada. Nulla quis dui quis ante fermentum interdum. Proin eget est a augue vehicula mattis. Pellentesque sed nisi at nisis celerisque iaculis</p>
+									</li>
+									<li>
+										<div class="holder-img">
+											<img src="images/sv-2.svg" alt="img">
+										</div>
+										<span>token_design</span>
+										<p>Quisque ac lorem. Maecenas ut sem sed ipsum suscipit malesuada. Nulla quis dui quis ante fermentum interdum. Proin eget est a augue vehicula mattis. Pellentesque sed nisi at nisis celerisque iaculis</p>
+									</li>
+									<li>
+										<div class="holder-img">
+											<img src="images/sv-3.svg" alt="img">
+										</div>
+										<span>dapp_development</span>
+										<p>Quisque ac lorem. Maecenas ut sem sed ipsum suscipit malesuada. Nulla quis dui quis ante fermentum interdum. Proin eget est a augue vehicula mattis. Pellentesque sed nisi at nisis celerisque iaculis</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wanna" style="background: url(images/bg-7.png);">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<h2>Wanna starta project?</h2>
+								<a class="btn-us" href="index-page.html#">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="promo-slider">
 					<div class="container">
 						<div class="row">
@@ -182,7 +163,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div class="partners">
 					<div class="container">
 						<div class="row">
@@ -274,7 +254,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<footer id="footer">
 				<div class="footer-top">
@@ -286,7 +265,7 @@
 										<img src="images/sv-6.svg" alt="img">
 									</div>
 									<div class="holder-text">
-										<span id="btc-usd"></span>
+										<span>1 BTC = 3331 EUR</span>
 									</div>
 								</div>
 							</div>
@@ -296,7 +275,7 @@
 										<img src="images/sv-9.svg" alt="img">
 									</div>
 									<div class="holder-text">
-										<span id="eth-usd"></span>
+										<span>1 ETH = 239 EUR</span>
 									</div>
 								</div>
 							</div>
