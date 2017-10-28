@@ -20,6 +20,23 @@
 		<script type="text/javascript" src="js/jquery.main.js"></script>
 		<!--[if lte IE 8]>
 		<script type="text/javascript" src="js/libs/ie.js"></script><![endif]-->
+		<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript">
+			function getBtcValue() {
+			  return axios.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD');
+			}
+
+			function getEthValue() {
+			  return axios.get('https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=USD');
+			}
+
+			axios.all([getBtcValue(), getEthValue()])
+			  .then(axios.spread(function (btc, eth) {
+			    // Both requests are now complete
+			    $('#btc-usd').text('1 BTC = '+ btc.data[0].price_usd +' USD')
+			    $('#eth-usd').text('1 ETH = '+ eth.data[0].price_usd +' USD')
+			}));
+		</script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -269,7 +286,7 @@
 										<img src="images/sv-6.svg" alt="img">
 									</div>
 									<div class="holder-text">
-										<span>1 BTC = 3331 EUR</span>
+										<span id="btc-usd"></span>
 									</div>
 								</div>
 							</div>
@@ -279,7 +296,7 @@
 										<img src="images/sv-9.svg" alt="img">
 									</div>
 									<div class="holder-text">
-										<span>1 ETH = 239 EUR</span>
+										<span id="eth-usd"></span>
 									</div>
 								</div>
 							</div>
