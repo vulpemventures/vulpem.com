@@ -1,374 +1,401 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Vulpem Ventures</title>
 
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width">
-		<meta name="format-detection" content="telephone=no"/>
+<head>
+	<meta charset="utf-8">
+	<title>Vulpem Ventures</title>
 
-		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-		<link rel="stylesheet" href="css/slick.css" type="text/css" />
-		<link rel="stylesheet" href="css/all.css" type="text/css" />
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
-		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no" />
 
-		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/libs/slick.min.js"></script>
-		<script type="text/javascript" src="js/jquery.main.js"></script>
-		<!--[if lte IE 8]>
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="css/slick.css" type="text/css" />
+	<link rel="stylesheet" href="css/all.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/libs/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!--[if lte IE 8]>
 		<script type="text/javascript" src="js/libs/ie.js"></script><![endif]-->
-		<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script type="text/javascript">
-			function getBtcValue() {
-			  return axios.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD');
-			}
+	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript">
+		function getBtcValue() {
+			return axios.get('https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=USD');
+		}
 
-			function getEthValue() {
-			  return axios.get('https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=USD');
-			}
+		function getEthValue() {
+			return axios.get('https://api.coinmarketcap.com/v1/ticker/ethereum/?convert=USD');
+		}
 
-			axios.all([getBtcValue(), getEthValue()])
-			  .then(axios.spread(function (btc, eth) {
-			    // Both requests are now complete
-			    $('#btc-usd').text('1 BTC = '+ btc.data[0].price_usd +' USD')
-			    $('#eth-usd').text('1 ETH = '+ eth.data[0].price_usd +' USD')
+		axios.all([getBtcValue(), getEthValue()])
+			.then(axios.spread(function (btc, eth) {
+				// Both requests are now complete
+				$('#btc-usd').text('1 BTC = ' + btc.data[0].price_usd + ' USD')
+				$('#eth-usd').text('1 ETH = ' + eth.data[0].price_usd + ' USD')
 			}));
-		</script>
-	</head>
-	<body>
-		<div id="wrapper">
-			<header id="header">
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="group">
+							<a class="btn-menu" href="index-page.html#"></a>
+							<strong class="logo">
+								<a href="index-page.html#">V</a>
+							</strong>
+							<nav id="nav">
+								<ul>
+									<li>
+										<a href="index-page.html#">
+											<span>://</span> security_audit</a>
+									</li>
+									<li>
+										<a href="index-page.html#">
+											<span>://</span> token_design</a>
+									</li>
+									<li>
+										<a href="index-page.html#">
+											<span>://</span> dapp_dev</a>
+									</li>
+									<li>
+										<a href="index-page.html#">
+											<span>://</span> partner</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="main">
+			<div style="background: url(images/bg-1.png);" class="promo">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="group">
-								<a class="btn-menu" href="index-page.html#"></a>
-								<strong class="logo"><a href="index-page.html#">V</a></strong>
-								<nav id="nav">
-									<ul>
-										<li><a href="index-page.html#"><span>://</span> security_audit</a></li>
-										<li><a href="index-page.html#"><span>://</span> token_design</a></li>
-										<li><a href="index-page.html#"><span>://</span> dapp_dev</a></li>
-										<li><a href="index-page.html#"><span>://</span> partner</a></li>
-									</ul>
-								</nav>
+						<div class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-12">
+							<div class="holder-text">
+								<h2>Distribuited
+									<br>Digital
+									<br>Agency</h2>
+								<a class="btn-contact" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</header>
-			<div id="main">
-				<div style="background: url(images/bg-1.png);" class="promo">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-12" >
-								<div class="holder-text">
-									<h2>Distribuited <br>Digital <br>Agency</h2>
-									<a class="btn-contact" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
 
-				<div class="left-img">
-					<div class="holder-img">
-						<img src="images/bg-3.png" alt="img">
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
-								<div class="holder-text">
-									<h2>Ready for the <br>blockchain revolution ?</h2>
-									<div class="block-text">
-										<p>We can help you designing, developing and launching your product based on cryptoeconomics technologies</p>
-										<div class="holder-link">
-											<a class="link-green" href="index-page.html#">PROJECTS</a>
-											<a class="link-brown" href="index-page.html#">ABOUTUS</a>
-										</div>
+			<div class="left-img">
+				<div class="holder-img">
+					<img src="images/bg-3.png" alt="img">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
+							<div class="holder-text">
+								<h2 class="animated infinite tada">Ready for the
+									<br>blockchain revolution ?</h2>
+								<div class="block-text">
+									<p>We can help you designing, developing and launching your product based on cryptoeconomics technologies</p>
+									<div class="holder-link">
+										<a class="link-green" href="index-page.html#">PROJECTS</a>
+										<a class="link-brown" href="index-page.html#">ABOUTUS</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="solutions">
+							<h2>Handcrafted &
+								<br>tailormade solutions</h2>
+							<ul class="list-solutions">
+								<li>
+									<div class="holder-img">
+										<img src="images/sv-1.svg" alt="img">
+									</div>
+									<span>security_audit</span>
+									<p>Launching a token sale is complex. Vulpem take care of reviewing your smart contracts, infrastructure and team security
+										using industry-standard security patterns and best practices. Never trust free WiFi ;)</p>
+								</li>
+								<li>
+									<div class="holder-img">
+										<img src="images/sv-2.svg" alt="img">
+									</div>
+									<span>token_design</span>
+									<p>Vulpem let the founders describe the dynamics of the network that they envision and then reverse engineer the description
+										into a solid Token logic. </p>
+								</li>
+								<li>
+									<div class="holder-img">
+										<img src="images/sv-3.svg" alt="img">
+									</div>
+									<span>dapp_development</span>
+									<p>A Dapp consists of two parts: a frontend and a backend. Vulpem's team have combined more than 40 years of classical
+										development, and build Dapps from day 0.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right-img">
+				<div class="holder-img">
+					<img src="images/bg-2.png" alt="img">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+							<div class="holder-text">
+								<h2>Our unique methodology</h2>
+								<div class="block-text">
+									<p>All team participants work remotely and are contractors.</p>
+									<p>We-work-like open-source projects, but with a monetary reward for eachticket (issue) that passes-the CI test and
+										code quality metrics.</p>
+									<div class="holder-link">
+										<a class="link-green" href="index-page.html#">DISCOVERMORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="wanna" style="background: url(images/project-bg.jpg);">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="solutions">
-								<h2>Handcrafted & <br>tailormade solutions</h2>
-								<ul class="list-solutions">
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-1.svg" alt="img">
-										</div>
-										<span>security_audit</span>
-										<p>Launching a token sale is complex. Vulpem take care of reviewing your smart contracts, infrastructure and team security using industry-standard security patterns and best practices. Never trust free WiFi ;)</p>
-									</li>
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-2.svg" alt="img">
-										</div>
-										<span>token_design</span>
-										<p>Vulpem let the founders describe the dynamics of the network that they envision and then reverse engineer the description into a solid Token logic. </p>
-									</li>
-									<li>
-										<div class="holder-img">
-											<img src="images/sv-3.svg" alt="img">
-										</div>
-										<span>dapp_development</span>
-										<p>A Dapp consists of two parts: a frontend and a backend. Vulpem's team have combined more than 40 years of classical development, and build Dapps from day 0.</p>
-									</li>
-								</ul>
-							</div>
+							<h2>Want to start a project?</h2>
+							<a class="btn-us" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
 						</div>
 					</div>
 				</div>
-
-				<div class="right-img">
-					<div class="holder-img">
-						<img src="images/bg-2.png" alt="img">
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
-								<div class="holder-text">
-									<h2>Our unique methodology</h2>
-									<div class="block-text">
-										<p>All team participants work remotely and are contractors.</p>
-										<p>We-work-like open-source projects, but with a monetary reward for eachticket (issue) that passes-the CI test and code quality metrics.</p>
-										<div class="holder-link">
-											<a class="link-green" href="index-page.html#">DISCOVERMORE</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="wanna" style="background: url(images/project-bg.jpg);">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<h2>Want to start a project?</h2>
-								<a class="btn-us" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="promo-slider">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<h2>Incoming ICOs</h2>
-							</div>
-						</div>
-					</div>
-					<div class="slider">
-						<div>
-							<img src="images/bg-1.png" alt="img">
-						</div>
-						<div>
-							<img src="images/bg-1.png" alt="img">
-						</div>
-						<div>
-							<img src="images/bg-1.png" alt="img">
-						</div>
-					</div>
-				</div>
-
-				<div class="partners">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<h2>Our Partners</h2>
-								<ul class="list-partners">
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-									<li>
-										<a href="index-page.html#">
-											<img src="images/bg-13.png" alt="img">
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
-			<footer id="footer">
-				<div class="footer-top">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="btc">
-									<div class="holder-img">
-										<img src="images/sv-6.svg" alt="img">
-									</div>
-									<div class="holder-text">
-										<span id="btc-usd"></span>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="btc">
-									<div class="holder-img">
-										<img src="images/sv-9.svg" alt="img">
-									</div>
-									<div class="holder-text">
-										<span id="eth-usd"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
+			<div class="promo-slider">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-5 col-md-4 col-sm-3 col-xs-12">
-							<strong class="logo-footer">
-								<a href="index-page.html#">VULPEM &#160; VENTURES</a>
-							</strong>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-4 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-2 ">
-							<div class="footer-m">
-								<div class="info-footer">
-									<span class="section-title">CONTACT</span>
-									<div>
-										<a class="btn-site" href="index-page.html#">hello(at)vulpem.com</a>
-									</div>
-									<a class="tel-f" href="tel:+399372949292">+399372949292</a>
-								</div>
-								<div class="info-footer">
-									<span class="section-title">HEADQUARTER</span>
-									<address>Sepapaja tn 6, 15551 Tallin Estonia</address>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-4 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-2">
-							<div class="info-footer">
-								<span class="section-title">NEWS</span>
-								<ul class="list-news">
-									<li>
-										<span class="nick">@twitter_account</span>
-										<div class="group">
-											<div class="holder-img">
-												<img src="images/bg-17.png" alt="img">
-											</div>
-											<div class="holder-text">
-												<p>Phasellus necmagna Aenean vehicula, turpis in congue eleifend, mauris loremaliquamsem, eu</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<span class="nick">@facebook_proile</span>
-										<div class="group">
-											<div class="holder-img">
-												<img src="images/bg-17.png" alt="img">
-											</div>
-											<div class="holder-text">
-												<p>Phasellus necmagna Aenean vehicula, turpis in congue eleifend, mauris loremaliquamsem, eu</p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
+						<div class="col-lg-12">
+							<h2>Incoming ICOs</h2>
 						</div>
 					</div>
 				</div>
+				<div class="slider">
+					<div>
+						<img src="images/bg-1.png" alt="img">
+					</div>
+					<div>
+						<img src="images/bg-1.png" alt="img">
+					</div>
+					<div>
+						<img src="images/bg-1.png" alt="img">
+					</div>
+				</div>
+			</div>
+
+			<div class="partners">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<div class="copyright">
-								<span>&#169; Vulpem Ventures OÜ (LLC)</span>
-								<span>All rights reserved</span>
-							</div>
+						<div class="col-lg-12">
+							<h2>Our Partners</h2>
+							<ul class="list-partners">
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+								<li>
+									<a href="index-page.html#">
+										<img src="images/bg-13.png" alt="img">
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
+
 		</div>
-	</body>
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="btc">
+								<div class="holder-img">
+									<img src="images/sv-6.svg" alt="img">
+								</div>
+								<div class="holder-text">
+									<span id="btc-usd"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="btc">
+								<div class="holder-img">
+									<img src="images/sv-9.svg" alt="img">
+								</div>
+								<div class="holder-text">
+									<span id="eth-usd"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-4 col-sm-3 col-xs-12">
+						<strong class="logo-footer">
+							<a href="index-page.html#">VULPEM &#160; VENTURES</a>
+						</strong>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-2 ">
+						<div class="footer-m">
+							<div class="info-footer">
+								<span class="section-title">CONTACT</span>
+								<div>
+									<a class="btn-site" href="index-page.html#">hello(at)vulpem.com</a>
+								</div>
+								<a class="tel-f" href="tel:+399372949292">+399372949292</a>
+							</div>
+							<div class="info-footer">
+								<span class="section-title">HEADQUARTER</span>
+								<address>Sepapaja tn 6, 15551 Tallin Estonia</address>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-2">
+						<div class="info-footer">
+							<span class="section-title">NEWS</span>
+							<ul class="list-news">
+								<li>
+									<span class="nick">@twitter_account</span>
+									<div class="group">
+										<div class="holder-img">
+											<img src="images/bg-17.png" alt="img">
+										</div>
+										<div class="holder-text">
+											<p>Phasellus necmagna Aenean vehicula, turpis in congue eleifend, mauris loremaliquamsem, eu</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="nick">@facebook_proile</span>
+									<div class="group">
+										<div class="holder-img">
+											<img src="images/bg-17.png" alt="img">
+										</div>
+										<div class="holder-text">
+											<p>Phasellus necmagna Aenean vehicula, turpis in congue eleifend, mauris loremaliquamsem, eu</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="copyright">
+							<span>&#169; Vulpem Ventures OÜ (LLC)</span>
+							<span>All rights reserved</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
 </html>
