@@ -300,6 +300,10 @@ h2{
     min-height: 94px;
     margin: 0 auto 56px;
 }
+.list-solutions .holder-img img{
+    width: 150px;
+    margin-left: -25px;
+}
 .list-solutions span{
     display: block;
     margin: 0 0 21px;
