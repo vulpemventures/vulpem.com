@@ -240,6 +240,9 @@ h2{
     right: 0;
     top: 0;
     width: 48%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-filter: opacity(0.6);
 }
 .right-img img{
     max-width: 100%;
@@ -260,7 +263,9 @@ h2{
     width: 48%;
 }
 .left-img .holder-img img{
-    width: 100%;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -webkit-filter: opacity(0.6);
 }
 .left-img .holder-text{
     padding: 0 60px 0 0;
@@ -648,6 +653,7 @@ h2{
     .right-img {
         min-height: 340px;
         margin: 0 0 150px;
+        margin-top: 150px;
     }
     .left-img {
         min-height: 330px;
