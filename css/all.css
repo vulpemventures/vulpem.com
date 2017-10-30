@@ -614,7 +614,8 @@ h2{
         margin: 0 0 100px;
     }
     .btc .holder-img {
-        margin: 0 5% 0 0;
+        margin-left: 40%;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 1199px){
@@ -665,7 +666,8 @@ h2{
         padding: 0 15px 0 0;
     }
     .btc .holder-img {
-        margin: 0 10px 0 0;
+        margin-left: 40%;
+        margin-bottom: 10px;
     }
 }
 @media screen and (max-width: 925px){
@@ -808,6 +810,8 @@ h2{
         float: none;
         display: inline-block;
         vertical-align: middle;
+        margin-left: 40%;
+        margin-bottom: 10px;
     }
     .footer-top .holder-text{
         display: inline-block;
@@ -915,5 +919,17 @@ h2{
     .logo-footer a {
         font-size: 22px;
         line-height: 24px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .logo-footer a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logo-footer a {
+        font-size: 25px;
     }
 }
