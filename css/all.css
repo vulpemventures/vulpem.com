@@ -146,6 +146,7 @@ html,body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    height: 100vh;
 }
 .promo h2{
     position: relative;
@@ -631,8 +632,9 @@ h2{
 }
 @media screen and (max-width: 1060px){
     .promo {
+        background-position: 26% center!important;
         padding: 240px 0 150px;
-
+        height: 100vh;
     }
 }
 @media screen and (max-width: 991px){
@@ -672,8 +674,8 @@ h2{
 }
 @media screen and (max-width: 925px){
     .promo {
-        padding: 180px 0 150px;
-        background-position: 31% center!important;
+        background-position: 40% center!important;
+        height: 100vh;
     }
 }
 
