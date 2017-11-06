@@ -96,7 +96,8 @@ html,body {
 }
 
 #batman-logo {
-    width: 600px;
+    padding-top: 10px;
+    width: 200px;
     display:block;
     margin:auto;
 }
@@ -292,7 +293,7 @@ h2{
     text-align: center;
 }
 .solutions h2{
-    margin: 0 0 180px;
+    margin: 0 0 120px;
 }
 .list-solutions{
     font-size: 0;
@@ -322,7 +323,6 @@ h2{
 .list-solutions span{
     display: block;
     margin: 0 0 21px;
-    color: #FF5500;
     font-size: 24px;
     line-height: 26px;
 }
@@ -626,7 +626,7 @@ h2{
     }
     .left-img {
         min-height: 385px;
-        margin: 0 0 100px;
+        margin: 0 0 200px;
     }
     .btc .holder-img {
         margin-left: 40%;
