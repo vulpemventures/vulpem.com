@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="css/all.css" type="text/css" />
 
 	<link rel="stylesheet" href="css/animate.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" />
 
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
@@ -26,6 +25,8 @@
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<!--[if lte IE 8]>
 		<script type="text/javascript" src="js/libs/ie.js"></script><![endif]-->
+	<script async src="//www.google-analytics.com/analytics.js"></script>
+	<script>!function(e,a,t,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(t),s=a.getElementsByTagName(t)[0],o.async=1,o.src=n,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-74717749-1","auto"),ga("send","pageview")</script>
 	<script type="text/javascript" src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script type="text/javascript">
 		function getBtcValue() {
@@ -39,9 +40,10 @@
 		axios.all([getBtcValue(), getEthValue()])
 			.then(axios.spread(function (btc, eth) {
 				// Both requests are now complete
-				$('#btc-usd').text('1 BTC = ' + btc.data[0].price_usd + ' USD')
-				$('#eth-usd').text('1 ETH = ' + eth.data[0].price_usd + ' USD')
+				$('#btc-usd').text('1 BTC = ' + parseInt(btc.data[0].price_usd).toFixed(1) + ' USD')
+				$('#eth-usd').text('1 ETH = ' + parseInt(eth.data[0].price_usd).toFixed(1) + ' USD')
 			}));
+
 	</script>
 </head>
 
@@ -51,11 +53,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="hidden-xs">
+							<img id="batman-logo" src="images/vulpem-logo-text.png" alt="Vulpem Logo" />
+						</div>
 						<div class="group">
-							<a class="btn-menu" href="index-page.html#"></a>
-							<strong class="logo">
+							<!-- <a class="btn-menu" href="index-page.html#"></a> -->
+							<strong class="logo visible-xs-inline-block">
 								<a href="index-page.html#">V</a>
 							</strong>
+							
 							<!--<nav id="nav">
 								<ul>
 									<li>
@@ -87,7 +93,7 @@
 					<div class="row">
 						<div class="col-lg-5 col-lg-offset-7 col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-12">
 							<div class="holder-text">
-								<h2>Distribuited
+								<h2 class="hero-font">Distributed
 									<br>Digital
 									<br>Agency</h2>
 								<a class="btn-contact" href="mailto:hello@vulpem.com?subject=Contact Us - Landing">Contact Us</a>
@@ -105,10 +111,12 @@
 					<div class="row">
 						<div class="col-lg-7 col-lg-offset-5 col-md-7 col-md-offset-5 col-sm-8 col-sm-offset-4 col-xs-12">
 							<div class="holder-text">
-								<h2>Ready for the
+								<h2 class="lato-bold">Ready for the
 									<br>blockchain revolution ?</h2>
 								<div class="block-text">
-									<p>We can help you designing, developing and launching your product based on cryptocurrencies technologies</p>
+									<p>We can support you designing and developing blockchain solutions.</br>
+									We lead amitious projects to success with security standards in mind.
+									</p>
 									<!--<div class="holder-link">
 										<a class="link-green" href="index-page.html#">PROJECTS</a>
 										<a class="link-brown" href="index-page.html#">ABOUT US</a>
@@ -123,29 +131,30 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="solutions">
-						<h2>Handcrafted &
+						<h2 class="lato-bold">Handcrafted &
 							<br>tailormade solutions</h2>
 						<ul class="list-solutions">
 							<li>
 								<div class="holder-img">
 									<img src="images/services/security.png" alt="img">
 								</div>
-								<span>security_audit</span>
+								<span><strong>security_audit</strong></span>
 								<p>Launching a token sale is complex. Vulpem take care of reviewing your smart contracts, infrastructure and team security using industry-standard security patterns and best practices. Never trust free WiFi ;)</p>
 							</li>
 							<li>
 								<div class="holder-img">
 									<img src="images/services/token-design.png" alt="img">
 								</div>
-								<span>token_design</span>
+								<span><strong>token_design</strong></span>
 								<p>Vulpem let the founders describe the dynamics of the network that they envision and then reverse engineer the description into a solid Token logic. </p>
 							</li>
 							<li>
 								<div class="holder-img">
 									<img src="images/services/decentralized.png" alt="img">
 								</div>
-								<span>dapp_development</span>
-								<p>Vulpem's team have combined more than 50 years of classical development, plus build outstanding Dapps</p>
+								<span><strong>dapp_development</strong></span>
+								<p>We are in the game since <a href="https://blockchain.info/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f">3 january 2009</a>.
+								</br>We have combined more than 50 years of classical development.</p>
 							</li>
 						</ul>
 					</div>
@@ -158,13 +167,13 @@
 				</div>
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<div class="holder-text">
-								<h2>Our unique methodology</h2>
+								<h2 class="lato-bold">Our unique methodology</h2>
 								<div class="block-text">
-									<p>All team participants work remotely and are distributed around the globe</p>
+									<p>All team participants are distributed around the globe</p>
 									<p>We work like open-source projects, but with a monetary reward for each ticket <br />
-										 that passes-the CI test and code quality metrics.</p>
+										 that passes code quality metrics.</p>
 									<!--<div class="holder-link">
 										<a class="link-green" href="index-page.html#">DISCOVER MORE</a>
 									</div>-->
