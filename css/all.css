@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700|Roboto+Mono:400,500');
+
 body {
     margin:0;
     color:#000;
     font: 24px/26px 'Lato', Arial ,sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     background:#fff;
 }
 img {
@@ -89,9 +91,16 @@ html,body {
 #header{
     position: relative;
     z-index: 2;
-    padding: 20px 0;
+    margin: 10px 0;
     background: rgba(0, 0, 0, 0.13);
 }
+
+#batman-logo {
+    width: 600px;
+    display:block;
+    margin:auto;
+}
+
 .btn-menu{
     display: none;
 }
@@ -322,7 +331,7 @@ h2{
 }
 .wanna{
     padding: 45px 0;
-    margin: 0 0 146px;
+    margin: 0 0 0px;
     text-align: center;
     color: #ffffff;
     background-size: cover!important;
@@ -911,6 +920,9 @@ h2{
     .left-img .holder-link a {
         margin: 0 10px 10px 0;
     }
+    .hero-font {
+        font-size: 38px !important;
+    }
 }
 @media screen and (max-width: 374px){
     .list-partners li {
@@ -940,4 +952,27 @@ h2{
     .logo-footer a {
         font-size: 25px;
     }
+}
+
+/* FONTS */
+
+.lato-bold {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: -0.02px;
+    line-height: 57px;
+}
+/*
+.subtitle {
+    font: 24px/26px 'Lato', Arial ,sans-serif;
+    font-weight: 300;
+}*/
+
+.hero-font {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 48px;
+    color: #FFFFFF;
+    letter-spacing: 0;
 }
