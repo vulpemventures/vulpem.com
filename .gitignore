@@ -5,7 +5,7 @@ node_modules/
 .DS_Store
 
 # Build folder
-#dist
+dist
 
 # cache parcel
 .cache
