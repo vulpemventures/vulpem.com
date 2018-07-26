@@ -1,0 +1,24 @@
+{
+  "name": "vulpem.com",
+  "version": "1.0.0",
+  "description": "Vulpem Ventures Main Website",
+  "main": "index.js",
+  "scripts": {
+    "start": "sh ./scripts/http-server",
+    "build": "sh ./scripts/build-css",
+    "watch": "sh ./scripts/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/vulpemventures/vulpem.com.git"
+  },
+  "author": "Vulpem Ventures",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/vulpemventures/vulpem.com#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.1",
+    "stylelint": "^9.3.0"
+  }
+}
