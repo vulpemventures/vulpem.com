@@ -7,7 +7,8 @@
     "start": "sh ./scripts/http-server",
     "build": "sh ./scripts/build-css",
     "watch": "sh ./scripts/watch-css",
-    "bundle": "sh ./scripts/bundle"
+    "bundle": "sh ./scripts/bundle",
+    "deploy": "sh ./scripts/deploy-gh-pages"
   },
   "repository": {
     "type": "git",
