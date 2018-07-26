@@ -7,6 +7,9 @@ node_modules/
 # Build folder
 build
 
+# Templating files
+template.html
+
 
 ### VisualStudioCode ###
 .vscode/*
