@@ -468,7 +468,7 @@ body {
   .footer .vulpem-logo {
     grid-area: vulpem-logo; }
     .footer .vulpem-logo .vulpem-logo-img {
-      background-image: url(/images/logo/100x86.png);
+      background-image: url(../images/logo/100x86.png);
       background-size: contain;
       width: 75px;
       height: 65px; }

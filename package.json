@@ -19,6 +19,7 @@
     "http-server": "^0.11.1",
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.1",
+    "parcel-bundler": "^1.9.7",
     "stylelint": "^9.3.0"
   }
 }

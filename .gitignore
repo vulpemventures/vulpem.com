@@ -7,6 +7,9 @@ node_modules/
 # Build folder
 dist
 
+# cache parcel
+.cache
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
