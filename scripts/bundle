@@ -1,0 +1,3 @@
+#!/bin/bash
+sh scripts/build-css
+node_modules/.bin/parcel build src/index.html 

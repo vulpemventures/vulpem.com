@@ -4,8 +4,11 @@ LOGO
 
 # Deployment 
 
-TBD
+First build th scss into css and bundle all the static assets. The folder to be deployed is `/dist` 
 
+`npm run bundle`
+
+Then commit to `gh-pages` branch
 
 
 # Development 
@@ -33,10 +36,7 @@ npm i
 npm start 
 ```
 
- # Build
-
-
-### SCSS -> CSS
+### Build SCSS into CSS
 
 **The folder structure and the file names are mandatory. Do not rename or move any folder**
 

@@ -5,8 +5,10 @@ node_modules/
 .DS_Store
 
 # Build folder
-build
+dist
 
+# cache parcel
+.cache
 
 ### VisualStudioCode ###
 .vscode/*
