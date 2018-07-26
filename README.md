@@ -17,12 +17,12 @@ TBD
 
 ### Clone
 
-`git clone https://bitbucket.org/vulpemventures/vulpem.com`
+`git clone https://github.com/vulpemventures/vulpemcom`
 
 
 ### Install 
 
-Install dependencies being in the cloned folder `vulpem.com`
+Install dependencies being in the cloned folder `vulpemcom`
 ```
 npm i
 ```
