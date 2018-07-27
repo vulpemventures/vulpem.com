@@ -1,3 +1,276 @@
+.f-size-1 {
+  font-size: 0.75rem; }
+
+.f-size-2 {
+  font-size: 0.875rem; }
+
+.f-size-3 {
+  font-size: 1rem; }
+
+.f-size-4 {
+  font-size: 1.125rem; }
+
+.f-size-5 {
+  font-size: 1.25rem; }
+
+.f-size-6 {
+  font-size: 1.5rem; }
+
+.f-size-7 {
+  font-size: 1.75rem; }
+
+.f-size-8 {
+  font-size: 2rem; }
+
+.f-size-9 {
+  font-size: 2.25rem; }
+
+.f-size-10 {
+  font-size: 2.625rem; }
+
+.f-size-11 {
+  font-size: 3rem; }
+
+.f-size-12 {
+  font-size: 3.375rem; }
+
+.f-size-13 {
+  font-size: 3.75rem; }
+
+.f-size-14 {
+  font-size: 4.25rem; }
+
+.f-size-15 {
+  font-size: 4.75rem; }
+
+.f-size-1 {
+  font-size: 0.75rem; }
+
+.f-size-2 {
+  font-size: 0.875rem; }
+
+.f-size-3 {
+  font-size: 1rem; }
+
+.f-size-4 {
+  font-size: 1.125rem; }
+
+.f-size-5 {
+  font-size: 1.25rem; }
+
+.f-size-6 {
+  font-size: 1.5rem; }
+
+.f-size-7 {
+  font-size: 1.75rem; }
+
+.f-size-8 {
+  font-size: 2rem; }
+
+.f-size-9 {
+  font-size: 2.25rem; }
+
+.f-size-10 {
+  font-size: 2.625rem; }
+
+.f-size-11 {
+  font-size: 3rem; }
+
+.f-size-12 {
+  font-size: 3.375rem; }
+
+.f-size-13 {
+  font-size: 3.75rem; }
+
+.f-size-14 {
+  font-size: 4.25rem; }
+
+.f-size-15 {
+  font-size: 4.75rem; }
+
+.margin-1 {
+  margin-bottom: 8pt; }
+
+.padding-1 {
+  padding-bottom: 8pt; }
+
+.margin-2 {
+  margin-bottom: 16pt; }
+
+.padding-2 {
+  padding-bottom: 16pt; }
+
+.margin-3 {
+  margin-bottom: 24pt; }
+
+.padding-3 {
+  padding-bottom: 24pt; }
+
+.margin-4 {
+  margin-bottom: 32pt; }
+
+.padding-4 {
+  padding-bottom: 32pt; }
+
+.margin-5 {
+  margin-bottom: 40pt; }
+
+.padding-5 {
+  padding-bottom: 40pt; }
+
+.margin-6 {
+  margin-bottom: 48pt; }
+
+.padding-6 {
+  padding-bottom: 48pt; }
+
+.margin-7 {
+  margin-bottom: 56pt; }
+
+.padding-7 {
+  padding-bottom: 56pt; }
+
+.margin-8 {
+  margin-bottom: 64pt; }
+
+.padding-8 {
+  padding-bottom: 64pt; }
+
+.margin-9 {
+  margin-bottom: 72pt; }
+
+.padding-9 {
+  padding-bottom: 72pt; }
+
+.margin-10 {
+  margin-bottom: 80pt; }
+
+.padding-10 {
+  padding-bottom: 80pt; }
+
+.margin-11 {
+  margin-bottom: 88pt; }
+
+.padding-11 {
+  padding-bottom: 88pt; }
+
+.margin-12 {
+  margin-bottom: 96pt; }
+
+.padding-12 {
+  padding-bottom: 96pt; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 8pt 16pt;
+  border-radius: 2pt;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+  border: 1pt solid transparent;
+  background: #000;
+  color: #fff; }
+  .btn:hover {
+    background: #24292e; }
+
+.btn-o {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 8pt 16pt;
+  border-radius: 2pt;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+  border: 1pt solid #000;
+  background: transparent;
+  color: #000; }
+  .btn-o:hover {
+    background: #000;
+    color: #fff; }
+
+.margin-1 {
+  margin-bottom: 8pt; }
+
+.padding-1 {
+  padding-bottom: 8pt; }
+
+.margin-2 {
+  margin-bottom: 16pt; }
+
+.padding-2 {
+  padding-bottom: 16pt; }
+
+.margin-3 {
+  margin-bottom: 24pt; }
+
+.padding-3 {
+  padding-bottom: 24pt; }
+
+.margin-4 {
+  margin-bottom: 32pt; }
+
+.padding-4 {
+  padding-bottom: 32pt; }
+
+.margin-5 {
+  margin-bottom: 40pt; }
+
+.padding-5 {
+  padding-bottom: 40pt; }
+
+.margin-6 {
+  margin-bottom: 48pt; }
+
+.padding-6 {
+  padding-bottom: 48pt; }
+
+.margin-7 {
+  margin-bottom: 56pt; }
+
+.padding-7 {
+  padding-bottom: 56pt; }
+
+.margin-8 {
+  margin-bottom: 64pt; }
+
+.padding-8 {
+  padding-bottom: 64pt; }
+
+.margin-9 {
+  margin-bottom: 72pt; }
+
+.padding-9 {
+  padding-bottom: 72pt; }
+
+.margin-10 {
+  margin-bottom: 80pt; }
+
+.padding-10 {
+  padding-bottom: 80pt; }
+
+.margin-11 {
+  margin-bottom: 88pt; }
+
+.padding-11 {
+  padding-bottom: 88pt; }
+
+.margin-12 {
+  margin-bottom: 96pt; }
+
+.padding-12 {
+  padding-bottom: 96pt; }
+
 @font-face {
   font-family: Agan65;
   src: url("../fonts/agan-65.ttf"); }
