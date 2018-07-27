@@ -1,0 +1,93 @@
+.footer {
+  padding: 114px 185px;
+  padding-right: 55px;
+  background: #222222;
+  color: $white;
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr 1fr; // 480/1200
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: " vulpem-logo quotation quotation quotation " " vulpem-logo info-office info-message info-social " " . info-privacy-policy info-work . " " info-copyright . . . ";
+
+  .vulpem-logo {
+    grid-area: vulpem-logo;
+
+    .vulpem-logo-img {
+      background-image: url(../images/logo/100x86.png);
+      background-size: contain;
+      width: 75px;
+      height: 65px;
+    }
+
+    .vulpem-motto {
+      font-family: $font-menu;
+      font-size: 0.75rem;
+      margin-top: 24px;
+    }
+  }
+  .quotation {
+    grid-area: quotation;
+    font-family: $font-post;
+    font-size: 1.5rem;
+    padding-bottom: 96px;
+    padding-top: 39px;
+    width: 600px;
+  }
+  .info-office {
+    grid-area: info-office;
+
+    .office {
+      margin-bottom: 33px;
+    }
+  }
+  .info-message {
+    grid-area: info-message;
+  }
+  .info-social {
+    grid-area: info-social;
+  }
+  .info-privacy-policy {
+    grid-area: info-privacy-policy;
+    .underlined {
+      font-size: 0.5625rem;
+    }
+  }
+  .info-work {
+    grid-area: info-work;
+    .underlined {
+      font-size: 0.5625rem;
+    }
+  }
+  .info-copyright {
+    grid-area: info-copyright;
+    font-family: $font-menu;
+    font-size: 0.625rem;
+  }
+
+  .info-title {
+    font-family: $font-menu;
+    font-size: 1rem;
+    margin-bottom: 26px;
+  }
+
+  .info-office,
+  .info-message,
+  .info-social {
+    font-family: $font-text;
+    font-size: 0.875rem;
+    p {
+      margin: 8px 0;
+    }
+    a {
+      font-weight: normal;
+    }
+  }
+  .info-social p {
+    margin: 18px 0;
+  }
+
+  .underlined {
+    border-bottom: 2px solid $white;
+    padding: 5px 0;
+    margin-top: 3px;
+  }
+}

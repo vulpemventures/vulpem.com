@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 64px;
+
+  li:first-child {
+    margin-right: auto;
+  }
+
+  img {
+    height: 27px;
+    width: 31px;
+  }
+
+  .menu-item {
+    margin: auto 64px;
+    font-family: $font-menu;
+    font-size: 0.875rem;
+    color: $white;
+  }
+
+  .menu-item-box {
+    border: 1px solid $white;
+    height: 32px;
+    width: 108px;
+    line-height: 36px;
+    text-align: center;
+
+    .menu-item-box-content {
+      font-family: $font-tag;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
