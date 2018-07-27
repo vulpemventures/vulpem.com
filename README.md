@@ -1,15 +1,17 @@
 # Vulpem Ventures Website
 
-LOGO
+<p align="center">
+  <img src="https://pbs.twimg.com/profile_images/1016986627808333824/nuk1E1au_400x400.jpg" alt="Vulpem Ventures"/>
+</p>
+
 
 # Deployment 
 
-First build th scss into css and bundle all the static assets. The folder to be deployed is `/dist` 
+Go in the root folder of the project and launch the command:
 
-`npm run bundle`
 
-Then commit to `gh-pages` branch
-
+`npm run deploy`
+Then your source code will be bundled in a local dist folder and committed to the `gh-pages` branch 
 
 # Development 
 
@@ -34,6 +36,12 @@ npm i
 
 ```
 npm start 
+```
+
+### Bundle for production
+
+```
+npm run bundle
 ```
 
 ### Build SCSS into CSS
