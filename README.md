@@ -1,7 +1,7 @@
 # Vulpem Ventures Website
 
-<p align="center" style="background-color:black; padding:20px">
-  <img src="https://raw.githubusercontent.com/vulpemventures/vulpemcom/master/src/images/vulpem-logo-text.png" alt="Vulpem Ventures"/>
+<p align="center">
+  <img src="https://pbs.twimg.com/profile_images/1016986627808333824/nuk1E1au_400x400.jpg" alt="Vulpem Ventures"/>
 </p>
 
 
