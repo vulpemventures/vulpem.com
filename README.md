@@ -7,11 +7,11 @@
 
 # Deployment 
 
-Go in the root folder of the project and launch the command:
+The script will bundle (`npm run bundle`) and commit the subtree located in `/dist`. 
 
+There allows to not track the dist folder in the git repo.
 
 `npm run deploy`
-Then your source code will be bundled in a local dist folder and committed to the `gh-pages` branch 
 
 # Development 
 

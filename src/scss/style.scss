@@ -1,4 +1,49 @@
+//@import "./style_old.scss";
 @import "node_modules/vulpem-design-system/index.scss";
-@import "./style_old.scss";
+@import "./lib/variables/index.scss";
+@import "./lib/components/menu.scss";
+@import "./lib/components/header.scss";
+@import "./lib/components/post.scss";
+@import "./lib/components/content.scss";
+@import "./lib/components/footer.scss";
+
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.main.white .masthead {
+  color: $black;
+}
+
+.main.black .masthead {
+  color: $white;
+}
+
+.main.black,
+.main.black > .content,
+.main > .content > .black {
+  background-color: $black;
+  color: $white;
+}
+.main.white,
+.main.white > .content,
+.main > .content > .white {
+  background-color: $white;
+  color: $black;
+}
+
+.main > .content.black {
+  background-color: $black;
+  color: $white;
+}
+.main > .content.white {
+  background-color: $white;
+  color: $black;
+}
 
 
