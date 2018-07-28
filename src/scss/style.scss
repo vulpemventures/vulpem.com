@@ -10,10 +10,22 @@
 body {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
+}
+
+%left-line-shared {
+  height: 0px;
+  width: 99px;
+  margin-right: 24px;
+}
+
+.left-line {
+  @extend %left-line-shared;
+  border: 1px solid #ffffff;
 }
 
 .main.white .masthead {

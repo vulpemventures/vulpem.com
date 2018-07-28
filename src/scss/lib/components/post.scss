@@ -53,14 +53,3 @@
 .post.active {
   display: block;
 }
-
-%left-line-shared {
-  height: 0px;
-  width: 99px;
-  margin-right: 24px;
-}
-
-.left-line {
-  @extend %left-line-shared;
-  border: 1px solid #ffffff;
-}

@@ -409,14 +409,6 @@
 .post.active {
   display: block; }
 
-.left-line {
-  height: 0px;
-  width: 99px;
-  margin-right: 24px; }
-
-.left-line {
-  border: 1px solid #ffffff; }
-
 .content {
   padding: 137px 0; }
   .content > div {
@@ -511,23 +503,23 @@
       font-family: Agan65;
       font-size: 0.875rem;
       color: #fff; }
-  .content .other-works {
+  .content .cta {
     display: grid;
     grid-template-columns: 17.7% auto 208px 17.7%;
     grid-template-rows: auto auto;
-    grid-template-areas: " .  other-works-text  other-works-button . " " .  other-works-line other-works-button . ";
-    margin-top: 407px;
+    grid-template-areas: " .  cta-text  cta-button . " " .  cta-line cta-button . ";
+    margin-top: 132px;
     margin-left: 0;
     margin-right: 0; }
-    .content .other-works .other-works-text {
-      grid-area: other-works-text;
+    .content .cta .cta-text {
+      grid-area: cta-text;
       font-family: "Playfair Display", serif;
       font-size: 2.25rem;
       color: #000;
       letter-spacing: -0.12px;
       width: 400px; }
-    .content .other-works .other-works-button {
-      grid-area: other-works-button;
+    .content .cta .cta-button {
+      grid-area: cta-button;
       line-height: 56px;
       background: #dcdcdc;
       text-align: center;
@@ -536,10 +528,10 @@
       font-family: Agan65;
       font-size: 1.125rem;
       color: #fff; }
-    .content .other-works .chapter-line {
+    .content .cta .chapter-line {
       margin-left: 0px; }
-    .content .other-works .other-works-line {
-      grid-area: other-works-line;
+    .content .cta .cta-line {
+      grid-area: cta-line;
       font-family: Agan45;
       font-size: 1.125rem;
       color: #000;
@@ -716,6 +708,14 @@ a {
   text-decoration: none;
   color: inherit;
   font-weight: bold; }
+
+.left-line {
+  height: 0px;
+  width: 99px;
+  margin-right: 24px; }
+
+.left-line {
+  border: 1px solid #ffffff; }
 
 .main.white .masthead {
   color: #000; }
