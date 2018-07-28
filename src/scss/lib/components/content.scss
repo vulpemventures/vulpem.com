@@ -124,17 +124,17 @@
     }
   }
 
-  .other-works {
+  .cta {
     display: grid;
     grid-template-columns: 17.7% auto 208px 17.7%;
     grid-template-rows: auto auto;
-    grid-template-areas: " .  other-works-text  other-works-button . " " .  other-works-line other-works-button . ";
-    margin-top: 407px;
+    grid-template-areas: " .  cta-text  cta-button . " " .  cta-line cta-button . ";
+    margin-top: 132px;
     margin-left: 0;
     margin-right: 0;
 
-    .other-works-text {
-      grid-area: other-works-text;
+    .cta-text {
+      grid-area: cta-text;
       font-family: $font-post;
       font-size: 2.25rem;
       color: $black;
@@ -142,8 +142,8 @@
       width: 400px;
     }
 
-    .other-works-button {
-      grid-area: other-works-button;
+    .cta-button {
+      grid-area: cta-button;
       line-height: 56px;
       background: #dcdcdc;
       text-align: center;
@@ -158,8 +158,8 @@
       margin-left: 0px;
     }
 
-    .other-works-line {
-      grid-area: other-works-line;
+    .cta-line {
+      grid-area: cta-line;
       font-family: $font-text;
       font-size: 1.125rem;
       color: $black;
