@@ -21,44 +21,20 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-// gulp.task('js', function () {
-//     "use strict";
-//
-//     return gulp.src(['js/**/*.js'])
-//         .pipe(plumber())
-//         .pipe(babel())
-//         .pipe(concat('main.js'))
-//         .pipe(gulp.dest(WORK_OUT_FOLDER + 'js/'))
-//         .pipe(rename('main.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'))
-//         .pipe(size());
-// });
+gulp.task('js', function () {
+    "use strict";
 
+    return gulp.src(['./src/js/**/*.js'])
+        .pipe(plumber())
+        .pipe(babel())
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(WORK_OUT_FOLDER + 'js/'))
+        .pipe(rename('main.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'))
+        .pipe(size());
+});
 
-// gulp.task('vendors', function () {
-//     "use strict";
-//
-//     gulp.src([
-//         './assets_dev/bower_components/reset-css/reset.css'
-//     ])
-//     .pipe(concat('vendors.css'))
-//     // .pipe(rename('vendors.min.css'))
-//     .pipe(minifyCSS())
-//     .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
-//
-//     var vendors_js = [
-//         // './assets_dev/bower_components/jquery/dist/jquery.min.js'
-//     ];
-//
-//     gulp.src(vendors_js)
-//         .pipe(concat('vendors.js'))
-//         .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'))
-//         .pipe(rename('vendors.min.js'))
-//         .pipe(uglify())
-//         .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'));
-//
-// });
 
 gulp.task('serve', ['scss-to-css'], function() {
 
@@ -67,7 +43,7 @@ gulp.task('serve', ['scss-to-css'], function() {
     });
 
     gulp.watch("./src/scss/*.scss", ['scss-to-css']);
-    // gulp.watch('js/**/*.js', ['js']);
+    gulp.watch('./src/js/**/*.js', ['js']);
     gulp.watch("./src/css/*.css").on('change', browserSync.reload);
     gulp.watch("./src/js/*.js").on('change', browserSync.reload);
     gulp.watch("./src/*.html").on('change', browserSync.reload);
@@ -92,9 +68,9 @@ gulp.task('watch', function () {
     "use strict";
 
     gulp.watch('./src/scss/**/*.scss', ['scss-to-css']);
+    gulp.watch('./src/scss/components/**/*.scss', ['scss-to-css']);
+    gulp.watch('./src/scss/lib/components/**/*.scss', ['scss-to-css']);
     gulp.watch('./src/js/**/*.js', ['js']);
-
-
 });
 
 gulp.task('default', ['watch']);
