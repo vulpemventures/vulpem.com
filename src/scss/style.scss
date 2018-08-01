@@ -1,6 +1,7 @@
 //@import "./style_old.scss";
+@import "../../node_modules/bulma/bulma.sass";
 @import "node_modules/vulpem-design-system/index.scss";
-@import "./lib/variables/index.scss";
+@import "./variables.scss";
 @import "./lib/components/menu.scss";
 @import "./lib/components/header.scss";
 @import "./lib/components/post.scss";
