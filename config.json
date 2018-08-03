@@ -1,3 +1,5 @@
 {
-  "WORK_OUT_FOLDER" : "../src/"
+  "WORK_OUT_FOLDER" : "./src/",
+  "PROD_FOLDER" : "./dist/",
+  "PROD" : false
 }

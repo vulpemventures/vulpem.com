@@ -8,10 +8,10 @@ $(function () {
         // centerMode: true,
         // centerPadding: '60px',
         arrows: false,
-        infinite: false
+        infinite: false,
     });
 
-    slider.on('wheel', function (e) {
+    slider.on('wheel', (function(e) {
         e.preventDefault();
 
         if (e.originalEvent.deltaY < 0) {
@@ -19,5 +19,5 @@ $(function () {
         } else {
             $(this).slick('slickNext');
         }
-    });
+    }));
 });

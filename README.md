@@ -7,7 +7,7 @@
 
 # Deployment 
 
-The script will bundle (`npm run bundle`) and commit the subtree located in `/dist`. 
+The script will bundle (`gulp bundle`) and commit the subtree located in `/dist`. 
 
 There allows to not track the dist folder in the git repo.
 
@@ -35,13 +35,13 @@ npm i
 ### Run a local server 
 
 ```
-npm start 
+gulp serve
 ```
 
 ### Bundle for production
-
+**If in config.json PROD = true, then this command will create dist folder and bundle minified css and js files**
 ```
-npm run bundle
+gulp bundle
 ```
 
 ### Build SCSS into CSS
@@ -56,14 +56,15 @@ Import each new file created in the **src/scss/style.scss** file
 
 Run the build script in the root folder
 ```
-npm run build
+gulp scss-to-css
 ```
 
 The compiled css are in the `./src/css` folder
 
-If you want to automatically watch changes in your scss file and automatically re-build on save
+If you want to automatically watch changes in your scss,js,html files and 
+automatically re-build it and reload local server
 ```
-npm run watch
+gulp default
 ```
 
 

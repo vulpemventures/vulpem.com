@@ -1,12 +1,11 @@
 /*global require*/
-var WORK_OUT_FOLDER = require('../config.json').WORK_OUT_FOLDER;
+var WORK_OUT_FOLDER = require('./config.json').WORK_OUT_FOLDER,
+    PROD_FOLDER = require('./config.json').PROD_FOLDER,
+    PROD = require('./config.json').PROD;
 
 var gulp        = require('gulp'),
     plumber     = require('gulp-plumber'),
     size        = require('gulp-filesize'),
-    spritesmith = require('gulp.spritesmith'),
-    imagemin    = require('gulp-imagemin'),
-    pngquant    = require('imagemin-pngquant'),
 	buffer      = require('vinyl-buffer'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCSS   = require('gulp-minify-css'),
@@ -21,39 +20,44 @@ var gulp        = require('gulp'),
 gulp.task('js', function () {
     "use strict";
 
-    return gulp.src(['./js/**/*.js'])
+    var js = gulp.src([WORK_OUT_FOLDER + 'js/main.js'])
         .pipe(plumber())
-        .pipe(babel())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest(WORK_OUT_FOLDER + 'js/'))
-        .pipe(rename('main.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'))
-        .pipe(size());
+    if(PROD){
+        return js
+                .pipe(rename('main.min.js'))
+                .pipe(uglify())
+                .pipe(gulp.dest(PROD_FOLDER + 'js'))
+                .pipe(size());
+    }
 });
 
 gulp.task('vendors', function () {
     "use strict";
 
-    gulp.src([
+    var vendor_css = gulp.src([
         './node_modules/slick-carousel/slick/slick.css',
         './node_modules/bulma/css/bulma.css',
     ])
         .pipe(concat('vendors.css'))
-        .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'))
-        .pipe(rename('vendors.min.css'))
-        .pipe(minifyCSS())
         .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
 
-    gulp.src([
+    var vendor_js = gulp.src([
         './node_modules/slick-carousel/slick/slick.js',
     ])
+        .pipe(babel())
         .pipe(concat('vendors.js'))
-        .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'))
-        .pipe(rename('vendors.min.js'))
-        .pipe(uglify())
         .pipe(gulp.dest(WORK_OUT_FOLDER + 'js'));
 
+    if (PROD){
+        vendor_css
+            .pipe(rename('vendors.min.css'))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest(PROD_FOLDER + 'css'));
+        vendor_js
+            .pipe(rename('vendors.min.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest(PROD_FOLDER + 'js'));
+    }
 });
 
 
@@ -61,8 +65,6 @@ gulp.task('serve', ['scss-to-css'], function() {
     browserSync.init({
         server: WORK_OUT_FOLDER
     });
-    gulp.watch("./scss/*.scss", ['scss-to-css']);
-    gulp.watch('./js/**/*.js', ['js']);
     gulp.watch(WORK_OUT_FOLDER + "css/*.css").on('change', browserSync.reload);
     gulp.watch(WORK_OUT_FOLDER + "js/*.js").on('change', browserSync.reload);
     gulp.watch(WORK_OUT_FOLDER + "*.html").on('change', browserSync.reload);
@@ -71,25 +73,31 @@ gulp.task('serve', ['scss-to-css'], function() {
 gulp.task("scss-to-css", function () {
     "use strict";
 
-    var stream = gulp.src("./scss/style.scss")
+    var scss = gulp.src(WORK_OUT_FOLDER + "scss/style.scss")
         .pipe(sass())
-        .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'))
         .pipe(autoprefixer({
             browsers: ['last 10 versions'],
             cascade: false
         }))
-        .pipe(rename({suffix: ".min"}))
-        .pipe(minifyCSS())
         .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
+    if (PROD) {
+        scss
+            .pipe(rename({suffix: ".min"}))
+            .pipe(minifyCSS())
+            .pipe(gulp.dest(PROD_FOLDER + 'css'));
+    }
+
 });
 
-gulp.task('watch', function () {
+gulp.task('watch',['serve'], function () {
     "use strict";
 
-    gulp.watch('./scss/**/*.scss', ['scss-to-css']);
-    gulp.watch('./scss/components/**/*.scss', ['scss-to-css']);
-    gulp.watch('./scss/lib/components/**/*.scss', ['scss-to-css']);
-    gulp.watch('./js/**/*.js', ['js']);
+    gulp.watch(WORK_OUT_FOLDER + 'scss/**/*.scss', ['scss-to-css']);
+    gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
+    gulp.watch(WORK_OUT_FOLDER + 'scss/lib/components/**/*.scss', ['scss-to-css']);
+    gulp.watch(WORK_OUT_FOLDER + 'js/**/*.js', ['js']);
 });
 
 gulp.task('default', ['watch']);
+
+gulp.task('bundle',['js','scss-to-css','vendors'])
