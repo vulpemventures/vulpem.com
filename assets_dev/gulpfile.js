@@ -1,7 +1,5 @@
 /*global require*/
-
-var WORK_OUT_FOLDER = '../src/',
-    PROD = false;
+var WORK_OUT_FOLDER = require('../config.json').WORK_OUT_FOLDER;
 
 var gulp        = require('gulp'),
     plumber     = require('gulp-plumber'),

@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "Vulpem Ventures Main Website",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "deploy": "sh ./scripts/deploy-gh-pages"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/vulpemventures/vulpem.com.git"
@@ -30,12 +32,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^1.5.4",
     "gulp.spritesmith": "^6.0.1",
-    "http-server": "^0.11.1",
     "imagemin-pngquant": "^4.2.0",
     "merge": "^1.2.0",
-    "node-sass": "^4.9.2",
-    "nodemon": "^1.18.3",
-    "parcel-bundler": "^1.9.7",
     "push-dir": "^0.4.1",
     "slick-carousel": "^1.8.1",
     "stylelint": "^9.4.0",
