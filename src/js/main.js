@@ -1,19 +1,23 @@
-$(function() {
-  $(".slideshow-link").on("click", function(e) {
-    var num = $(this).data("number");
-    showSlide(num);
-  });
-  showSlide(1);
+$(function () {
+    const slider = $(".main-slider");
+    slider.slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // adaptiveHeight: true,
+        // centerMode: true,
+        // centerPadding: '60px',
+        arrows: false,
+        infinite: false,
+    });
+
+    slider.on('wheel', (function(e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+        } else {
+            $(this).slick('slickNext');
+        }
+    }));
 });
-
-function showSlide(num) {
-  var slides = $(".post");
-  var dots = $(".slideshow-link");
-
-  for (var i = 0; i < slides.length; i++) {
-    slides.toggleClass("active", false);
-    dots.toggleClass("active", false);
-  }
-  $(this).toggleClass("active", true);
-  $(".post[data-number=" + num + "]").toggleClass("active", true);
-}

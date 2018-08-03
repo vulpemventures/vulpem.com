@@ -1,11 +1,12 @@
 //@import "./style_old.scss";
 @import "node_modules/vulpem-design-system/index.scss";
-@import "./lib/variables/index.scss";
-@import "./lib/components/menu.scss";
-@import "./lib/components/header.scss";
-@import "./lib/components/post.scss";
-@import "./lib/components/content.scss";
-@import "./lib/components/footer.scss";
+@import "variables";
+@import "components/top-section";
+@import "lib/components/menu";
+//@import "./lib/components/header.scss";
+@import "lib/components/post";
+@import "lib/components/content";
+@import "lib/components/footer";
 
 body {
   margin: 0;

@@ -1,13 +1,9 @@
 {
   "name": "vulpem.com",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Vulpem Ventures Main Website",
   "main": "index.js",
   "scripts": {
-    "start": "sh ./scripts/http-server",
-    "build": "sh ./scripts/build-css",
-    "watch": "sh ./scripts/watch-css",
-    "bundle": "sh ./scripts/bundle",
     "deploy": "sh ./scripts/deploy-gh-pages"
   },
   "repository": {
@@ -19,12 +15,26 @@
   "homepage": "https://bitbucket.org/vulpemventures/vulpem.com#readme",
   "devDependencies": {
     "@node-sass/node-module-importer": "^1.2.3",
-    "http-server": "^0.11.1",
-    "node-sass": "^4.9.2",
-    "nodemon": "^1.18.1",
-    "parcel-bundler": "^1.9.7",
+    "browser-sync": "^2.14.0",
+    "buffer": "^3.6.0",
+    "bulma": "^0.7.1",
+    "bundle": "^0.2.3",
+    "fullpage.js": "^3.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^1.5.4",
+    "merge": "^1.2.0",
     "push-dir": "^0.4.1",
-    "stylelint": "^9.3.0"
+    "slick-carousel": "^1.8.1",
+    "stylelint": "^9.4.0",
+    "vinyl-buffer": "^1.0.0"
   },
   "dependencies": {
     "vulpem-design-system": "github:vulpemventures/vulpem-design-system"

@@ -1,0 +1,31 @@
+.top-section{
+  background-color: #000;
+  height: 100vh;
+  padding-top: 35px;
+  .container{
+    height: 100%;
+  }
+}
+
+.main-slider{
+  height: 100%;
+  .slick-dots{
+    li{
+      display: inline-block;
+    }
+  }
+  .slick-list{
+    height: 100%;
+  }
+  .slick-track{
+    height: 100%;
+  }
+}
+
+.header{
+  background-color: #000;
+}
+
+.navbar-brand{
+  flex: 1;
+}
