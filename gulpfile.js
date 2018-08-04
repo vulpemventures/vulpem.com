@@ -1,7 +1,6 @@
 /*global require*/
 const WORK_OUT_FOLDER = require('./config.json').WORK_OUT_FOLDER,
-  PROD_FOLDER = require('./config.json').PROD_FOLDER,
-  PROD = require('./config.json').PROD;
+  PROD_FOLDER = require('./config.json').PROD_FOLDER;
 
 const gulp      = require('gulp'),
   gulpif        = require('gulp-if'),
@@ -21,15 +20,15 @@ const gulp      = require('gulp'),
 
 
 
-gulp.task('js', function () {
-  "use strict";
+gulp.task('js', () => {
+  'use strict';
 
   const js = gulp.src([WORK_OUT_FOLDER + 'js/main.js'])
     .pipe(plumber())
 });
 
-gulp.task('vendors', function () {
-  "use strict";
+gulp.task('vendors', () => {
+  'use strict';
 
   const vendor_css = gulp.src([
     './node_modules/slick-carousel/slick/slick.css',
@@ -53,20 +52,24 @@ gulp.task('images', () => {
       .pipe(gulp.dest(PROD_FOLDER + 'images'))
 });
 
+gulp.task('fonts', () => {
+  return gulp.src(WORK_OUT_FOLDER + 'fonts/*.*')
+      .pipe(gulp.dest(PROD_FOLDER + 'fonts'))
+});
 
-gulp.task('serve', ['scss-to-css', 'vendors'], function () {
+gulp.task('serve', ['scss-to-css', 'vendors'], () => {
   browserSync.init({
     server: WORK_OUT_FOLDER
   });
-  gulp.watch(WORK_OUT_FOLDER + "css/*.css").on('change', browserSync.reload);
-  gulp.watch(WORK_OUT_FOLDER + "js/*.js").on('change', browserSync.reload);
-  gulp.watch(WORK_OUT_FOLDER + "*.html").on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
 });
 
-gulp.task('scss-to-css', function () {
-  "use strict";
+gulp.task('scss-to-css', () => {
+  'use strict';
 
-  const scss = gulp.src(WORK_OUT_FOLDER + "scss/style.scss")
+  const scss = gulp.src(WORK_OUT_FOLDER + 'scss/style.scss')
     .pipe(sass())
     .pipe(autoprefixer({
       browsers: ['last 10 versions'],
@@ -75,8 +78,8 @@ gulp.task('scss-to-css', function () {
     .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
 });
 
-gulp.task('watch', ['serve'], function () {
-  "use strict";
+gulp.task('watch', ['serve'], () => {
+  'use strict';
 
   gulp.watch(WORK_OUT_FOLDER + 'scss/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
@@ -86,7 +89,7 @@ gulp.task('watch', ['serve'], function () {
 
 gulp.task('default', ['watch']);
 
-gulp.task('bundle', ['scss-to-css', 'vendors', 'images'], () => {
+gulp.task('bundle', ['scss-to-css', 'vendors', 'images', 'fonts'], () => {
   return gulp.src([WORK_OUT_FOLDER + '*.html'])
     .pipe(useref())
     .pipe(gulpif('*.js', uglify()))
