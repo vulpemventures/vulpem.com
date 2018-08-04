@@ -20,6 +20,7 @@
     "bundle": "^0.2.3",
     "fullpage.js": "^3.0.2",
     "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.1",
     "gulp-concat": "^2.6.0",
@@ -35,11 +36,9 @@
     "merge": "^1.2.0",
     "push-dir": "^0.4.1",
     "slick-carousel": "^1.8.1",
-    "stylelint": "^9.4.0",
-    "vinyl-buffer": "^1.0.0"
+    "stylelint": "^9.4.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
     "vulpem-design-system": "github:vulpemventures/vulpem-design-system"
   }
 }
