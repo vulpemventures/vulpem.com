@@ -36,7 +36,5 @@
     "stylelint": "^9.4.0",
     "vinyl-buffer": "^1.0.0"
   },
-  "dependencies": {
-    "vulpem-design-system": "github:vulpemventures/vulpem-design-system"
-  }
+  "dependencies": {}
 }

@@ -43,6 +43,90 @@
 .f-size-15 {
   font-size: 4.75rem; }
 
+.margin-1 {
+  margin-bottom: 8pt; }
+
+.padding-1 {
+  padding-bottom: 8pt; }
+
+.margin-2 {
+  margin-bottom: 16pt; }
+
+.padding-2 {
+  padding-bottom: 16pt; }
+
+.margin-3 {
+  margin-bottom: 24pt; }
+
+.padding-3 {
+  padding-bottom: 24pt; }
+
+.margin-4 {
+  margin-bottom: 32pt; }
+
+.padding-4 {
+  padding-bottom: 32pt; }
+
+.margin-5 {
+  margin-bottom: 40pt; }
+
+.padding-5 {
+  padding-bottom: 40pt; }
+
+.margin-6 {
+  margin-bottom: 48pt; }
+
+.padding-6 {
+  padding-bottom: 48pt; }
+
+.margin-7 {
+  margin-bottom: 56pt; }
+
+.padding-7 {
+  padding-bottom: 56pt; }
+
+.margin-8 {
+  margin-bottom: 64pt; }
+
+.padding-8 {
+  padding-bottom: 64pt; }
+
+.margin-9 {
+  margin-bottom: 72pt; }
+
+.padding-9 {
+  padding-bottom: 72pt; }
+
+.margin-10 {
+  margin-bottom: 80pt; }
+
+.padding-10 {
+  padding-bottom: 80pt; }
+
+.margin-11 {
+  margin-bottom: 88pt; }
+
+.padding-11 {
+  padding-bottom: 88pt; }
+
+.margin-12 {
+  margin-bottom: 96pt; }
+
+.padding-12 {
+  padding-bottom: 96pt; }
+
+@font-face {
+  font-family: Agan65;
+  src: url("../../src/fonts/agan-65.ttf"); }
+
+@font-face {
+  font-family: Agan45;
+  src: url("../../src/fonts/agan-45.ttf"); }
+
+@font-face {
+  font-family: Agan55;
+  src: url("../../src/fonts/agan-55.ttf"); }
+
 .f-size-1 {
   font-size: 0.75rem; }
 
@@ -223,99 +307,30 @@
     background: #000;
     color: #fff; }
 
-.margin-1 {
-  margin-bottom: 8pt; }
-
-.padding-1 {
-  padding-bottom: 8pt; }
-
-.margin-2 {
-  margin-bottom: 16pt; }
-
-.padding-2 {
-  padding-bottom: 16pt; }
-
-.margin-3 {
-  margin-bottom: 24pt; }
-
-.padding-3 {
-  padding-bottom: 24pt; }
-
-.margin-4 {
-  margin-bottom: 32pt; }
-
-.padding-4 {
-  padding-bottom: 32pt; }
-
-.margin-5 {
-  margin-bottom: 40pt; }
-
-.padding-5 {
-  padding-bottom: 40pt; }
-
-.margin-6 {
-  margin-bottom: 48pt; }
-
-.padding-6 {
-  padding-bottom: 48pt; }
-
-.margin-7 {
-  margin-bottom: 56pt; }
-
-.padding-7 {
-  padding-bottom: 56pt; }
-
-.margin-8 {
-  margin-bottom: 64pt; }
-
-.padding-8 {
-  padding-bottom: 64pt; }
-
-.margin-9 {
-  margin-bottom: 72pt; }
-
-.padding-9 {
-  padding-bottom: 72pt; }
-
-.margin-10 {
-  margin-bottom: 80pt; }
-
-.padding-10 {
-  padding-bottom: 80pt; }
-
-.margin-11 {
-  margin-bottom: 88pt; }
-
-.padding-11 {
-  padding-bottom: 88pt; }
-
-.margin-12 {
-  margin-bottom: 96pt; }
-
-.padding-12 {
-  padding-bottom: 96pt; }
-
-@font-face {
-  font-family: Agan65;
-  src: url("../../src/fonts/agan-65.ttf"); }
-
-@font-face {
-  font-family: Agan45;
-  src: url("../../src/fonts/agan-45.ttf"); }
-
-@font-face {
-  font-family: Agan55;
-  src: url("../../src/fonts/agan-55.ttf"); }
-
 .top-section {
   background-color: #000;
-  height: 100vh;
-  padding-top: 35px; }
+  height: 100vh; }
   .top-section .container {
-    height: 100%; }
+    height: 100%;
+    max-width: 1440px; }
 
 .main-slider {
   height: 100%; }
+  .main-slider .main-slider__item {
+    margin: 0 auto;
+    display: block !important;
+    padding: 30px 55px 0; }
+  .main-slider .slick-slide {
+    background-image: url(../images/slider-images/slider-image1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .main-slider .slick-slide:nth-of-type(2) {
+      background-image: url(../images/slider-images/slider-image2.jpg); }
+    .main-slider .slick-slide:nth-of-type(3) {
+      background-image: url(../images/slider-images/slider-image3.jpg); }
+    .main-slider .slick-slide:nth-of-type(4) {
+      background-image: url(../images/slider-images/slider-image4.jpg); }
   .main-slider .slick-dots li {
     display: inline-block; }
   .main-slider .slick-list {
