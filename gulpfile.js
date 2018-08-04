@@ -13,11 +13,10 @@ const gulp      = require('gulp'),
   plumber       = require('gulp-plumber'),
   imagemin      = require('gulp-imagemin')
   size          = require('gulp-filesize'),
+  gulpStylelint = require('gulp-stylelint'),
   minifyCSS     = require('gulp-minify-css'),
   autoprefixer  = require('gulp-autoprefixer'),
   browserSync   = require('browser-sync').create();
-
-
 
 
 gulp.task('js', () => {
@@ -48,25 +47,26 @@ gulp.task('vendors', () => {
 
 gulp.task('images', () => {
   return gulp.src(WORK_OUT_FOLDER + 'images/**/*.+(png|jpg|jpeg|gif|svg)')
-      .pipe(imagemin())
-      .pipe(gulp.dest(PROD_FOLDER + 'images'))
+    .pipe(imagemin())
+    .pipe(gulp.dest(PROD_FOLDER + 'images'))
 });
 
 gulp.task('fonts', () => {
   return gulp.src(WORK_OUT_FOLDER + 'fonts/*.*')
-      .pipe(gulp.dest(PROD_FOLDER + 'fonts'))
+    .pipe(gulp.dest(PROD_FOLDER + 'fonts'))
 });
 
-gulp.task('serve', ['scss-to-css', 'vendors'], () => {
-  browserSync.init({
-    server: WORK_OUT_FOLDER
-  });
-  gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
-  gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
-  gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
+gulp.task('lint-css', () => {
+  return gulp.src('src/**/*.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        { formatter: 'string', console: true }
+      ],
+      debug: true
+    }));
 });
 
-gulp.task('scss-to-css', () => {
+gulp.task('scss-to-css', ['lint-css'], () => {
   'use strict';
 
   const scss = gulp.src(WORK_OUT_FOLDER + 'scss/style.scss')
@@ -76,6 +76,15 @@ gulp.task('scss-to-css', () => {
       cascade: false
     }))
     .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
+});
+
+gulp.task('serve', ['scss-to-css', 'vendors'], () => {
+  browserSync.init({
+    server: WORK_OUT_FOLDER
+  });
+  gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
 });
 
 gulp.task('watch', ['serve'], () => {
