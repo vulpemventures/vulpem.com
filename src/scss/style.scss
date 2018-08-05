@@ -3,6 +3,7 @@
 @import "./lib/variables/colors.scss";
 @import "./lib/variables/spacing.scss";
 @import "variables";
+@import "./lib/texts";
 
 @import "./lib/components/button.scss";
 @import "./lib/components/top-section";
@@ -11,6 +12,9 @@
 @import "lib/components/post";
 @import "lib/components/content";
 @import "lib/components/footer";
+
+@import "lib/components/navbar.scss";
+
 
 body {
   margin: 0;
@@ -61,6 +65,10 @@ a {
 .main > .content.white {
   background-color: $white;
   color: $black;
+}
+
+.is-opacity{
+  opacity: 0;
 }
 
 
