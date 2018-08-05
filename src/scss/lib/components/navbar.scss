@@ -21,6 +21,9 @@
   .navbar-brand__logo{
     position: relative;
     left: 11px;
+    @include mobile{
+      margin-left: 5px;
+    }
     img{
       width: 31px;
       height: 27px;
@@ -36,6 +39,11 @@
       height: 32px;
       width: 108px;
       margin-left: 54px;
+      &:hover,&:active,&:focus{
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+      }
     }
   }
   .navbar-burger{
@@ -58,7 +66,7 @@
         top: calc(55% - 1px);
       }
       &:nth-child(3) {
-        width: 27px;
+        width: 25px;
         top: calc(60% + 4px);
       }
     }
@@ -74,17 +82,43 @@
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.85);
   transition: 0.5s ease-out;
+  padding: 0;
   &.is-opacity{
     z-index: -1;
   }
   .menu-list{
-    line-height: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    margin: 0 auto;
+    li:first-child {
+      margin: 0;
+    }
   }
   .menu-list__item{
+    &:hover,&:active,&:focus{
+      background-color: transparent;
+    }
     a{
       font-size: 20px;
       color: #fff;
       text-transform: uppercase;
+      text-align: center;
+      line-height: 25px;
+      &:hover,&:active,&:focus{
+        outline: none;
+        background-color: transparent;
+      }
+    }
+    button{
+      width: 100%;
+      &:hover,&:active,&:focus{
+        background-color: transparent;
+        outline: none;
+        box-shadow: none;
+        border-color: initial;
+      }
     }
   }
 }

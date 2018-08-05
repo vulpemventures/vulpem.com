@@ -35,8 +35,7 @@ gulp.task('vendors', function () {
     "use strict";
 
     var vendor_css = gulp.src([
-        './node_modules/slick-carousel/slick/slick.css',
-        './node_modules/bulma/css/bulma.css',
+        './node_modules/slick-carousel/slick/slick.css'
     ])
         .pipe(concat('vendors.css'))
         .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));

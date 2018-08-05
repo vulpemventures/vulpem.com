@@ -29,4 +29,8 @@ $(function () {
         $('.navbar-menu_mobile').addClass('is-opacity');
       }
     })
+    $(window).resize(function() {
+      let windowHeight = window.innerHeight;
+      $('.navbar-menu_mobile').css({'height':windowHeight+'px'});
+    });
 });

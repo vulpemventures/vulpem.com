@@ -6,6 +6,10 @@
   line-height: 72px;
   font-weight: 400;
   margin-bottom: 30px!important;
+  @include mobile{
+    font-size: 24px;
+  }
+
 }
 
 .subtitle{
@@ -15,6 +19,9 @@
   line-height: 13px;
   margin-top: 0;
   font-weight: 400;
+  @include mobile{
+    font-size: 15px;
+  }
 }
 
 .subtitle_link{
@@ -35,11 +42,15 @@
     position: relative;
     bottom: 5px;
   }
-  &:hover{
+  &:hover,&:focus{
     color: $gray-400;
+    outline: none;
     &:after{
       border-bottom: 3px solid $gray-400;
     }
+  }
+  @include mobile{
+    align-self: flex-start;
   }
 }
 
