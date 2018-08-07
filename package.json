@@ -14,7 +14,6 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/vulpemventures/vulpem.com#readme",
   "devDependencies": {
-    "@node-sass/node-module-importer": "^1.2.3",
     "browser-sync": "^2.14.0",
     "buffer": "^3.6.0",
     "bulma": "^0.7.1",
