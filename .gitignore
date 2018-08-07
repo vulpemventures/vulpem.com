@@ -20,3 +20,5 @@ dist
 
 .idea
 
+# Vendors
+vendors.*
