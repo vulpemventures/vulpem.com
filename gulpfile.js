@@ -24,6 +24,9 @@ gulp.task('js', function () {
     .pipe(plumber())
   if (PROD) {
     return js
+      .pipe(babel({
+        presets: ['env']
+      }))
       .pipe(rename('main.min.js'))
       .pipe(uglify())
       .pipe(gulp.dest(PROD_FOLDER + 'js'))
