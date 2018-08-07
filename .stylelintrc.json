@@ -5,7 +5,7 @@
     "max-empty-lines": 2,
     "color-no-invalid-hex": true,
     "declaration-colon-space-after": "always",
-    "unit-whitelist": ["em", "rem", "s", "px", "pt", "%", "fr", "vh"],
+    "unit-whitelist": ["em", "rem", "s", "px", "pt", "%", "fr", "vh", "deg"],
     "comment-empty-line-before": [ "always", {
       "ignore": ["stylelint-commands", "after-comment"]
     } ]
