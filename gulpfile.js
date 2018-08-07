@@ -101,7 +101,7 @@ gulp.task('default', ['watch']);
 gulp.task('bundle', ['scss-to-css', 'vendors', 'images', 'fonts'], () => {
   return gulp.src([WORK_OUT_FOLDER + '*.html'])
     .pipe(useref())
-    .pipe(gulpif('*.js', uglify()))
+    .pipe(gulpif('main.js', uglify()))
     .pipe(gulpif('*.css', minifyCSS()))
     .pipe(gulp.dest(PROD_FOLDER))
     .pipe(size());
