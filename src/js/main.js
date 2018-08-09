@@ -7,7 +7,7 @@ $(function () {
     arrows: false,
     infinite: false,
     customPaging: function(slider,i) {
-      return `<button class="slick-dots__item">0${i+1}</button>`
+      return `<button class="slick-dots-item">0${i+1}</button>`
     },
   });
 
@@ -24,13 +24,13 @@ $(function () {
   $('.navbar-burger').on('click', function () {
     $(this).toggleClass('is-active');
     if($(this).hasClass('is-active')){
-      $('.navbar-menu_mobile').removeClass('is-opacity');
+      $('.navbar-menu-mobile').removeClass('is-opacity');
     }else {
-      $('.navbar-menu_mobile').addClass('is-opacity');
+      $('.navbar-menu-mobile').addClass('is-opacity');
     }
   })
   $(window).resize(function() {
     let windowHeight = window.innerHeight;
-    $('.navbar-menu_mobile').css({'height':windowHeight+'px'});
+    $('.navbar-menu-mobile').css({'height':windowHeight+'px'});
   });
 });
