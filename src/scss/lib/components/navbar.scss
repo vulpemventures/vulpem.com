@@ -18,7 +18,7 @@
       transition: 0.3s ease-out;
     }
   }
-  .navbar-brand__logo{
+  .navbar-brand-logo{
     position: relative;
     left: 11px;
     @include mobile{
@@ -73,7 +73,7 @@
   }
 }
 
-.navbar-menu_mobile{
+.navbar-menu-mobile{
   position: absolute;
   top: 0;
   right: 0;
@@ -96,7 +96,7 @@
       margin: 0;
     }
   }
-  .menu-list__item{
+  .menu-list-item{
     &:hover,&:active,&:focus{
       background-color: transparent;
     }
@@ -123,7 +123,7 @@
   }
 }
 
-.navbar_fixed{
+.navbar-fixed{
   top: 0;
   position: absolute;
   right: 0;
