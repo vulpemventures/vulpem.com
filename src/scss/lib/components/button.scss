@@ -1,0 +1,88 @@
+@import "../../lib/variables/typography.scss";
+@import "../../lib/variables/spacing.scss";
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: $font-size-base;
+  // font-weight: $font-weight-base;     #TODO variable font-weight
+  padding: $padding-btn-y $padding-btn-x;
+  border-radius: $border-radius-btn;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.btn {
+  @include button-base;
+  border: $border-btn solid transparent;
+  background: $black;
+  color: $white;
+
+  &:hover {
+    background: $gray-dark;
+  }
+}
+
+.btn-o {
+  @include button-base;
+  border: $border-btn solid $border-color;
+  background: transparent;
+  color: $black;
+  &-white{
+    border: $border-btn solid #fff;
+    color: #ffffff;
+    line-height: 0;
+  }
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}
+
+// stylelint-disable selector-max-type, block-opening-brace-space-before, no-duplicate-selectors
+
+// Base button styles
+// .btn {
+//   position: relative;
+//   display: inline-block;
+//   padding: 6px 12px;
+//   font-size: $body-font-size;
+//   font-weight: $font-weight-bold;
+//   line-height: 20px; // Specifically not inherit our `<body>` default
+//   white-space: nowrap;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   user-select: none;
+//   background-repeat: repeat-x;
+//   background-position: -1px -1px;
+//   background-size: 110% 110%;
+//   border: 1px solid transparentize($black, 0.8);
+//   border-radius: 0.25em;
+//   appearance: none; // Corrects inability to style clickable `input` types in iOS.
+
+//   &:hover {
+//     text-decoration: none;
+//     background-repeat: repeat-x;
+//   }
+
+//   &:focus {
+//     outline: 0;
+//   }
+
+//   &:disabled,
+//   &.disabled {
+//     cursor: default;
+//     // Repeat `background-position` because `:hover`
+//     background-position: 0 0;
+//   }
+
+//   &:active,
+//   &.selected {
+//     background-image: none;
+//   }
+// }

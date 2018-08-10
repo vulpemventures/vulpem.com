@@ -1,12 +1,20 @@
 //@import "./style_old.scss";
-@import "node_modules/vulpem-design-system/index.scss";
+@import "../../node_modules/bulma/bulma.sass";
+@import "./lib/variables/typography.scss";
+@import "./lib/variables/colors.scss";
+@import "./lib/variables/spacing.scss";
 @import "variables";
-@import "components/top-section";
+@import "./lib/texts";
+
+@import "./lib/components/button.scss";
+@import "./lib/components/top-section";
 @import "lib/components/menu";
-//@import "./lib/components/header.scss";
 @import "lib/components/post";
 @import "lib/components/content";
 @import "lib/components/footer";
+
+@import "lib/components/navbar.scss";
+
 
 body {
   margin: 0;
@@ -57,6 +65,10 @@ a {
 .main > .content.white {
   background-color: $white;
   color: $black;
+}
+
+.is-opacity{
+  opacity: 0;
 }
 
 

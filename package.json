@@ -14,11 +14,11 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/vulpemventures/vulpem.com#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.14.0",
     "buffer": "^3.6.0",
     "bulma": "^0.7.1",
     "bundle": "^0.2.3",
-    "fullpage.js": "^3.0.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.1",
@@ -39,7 +39,5 @@
     "slick-carousel": "^1.8.1",
     "stylelint": "^9.4.0"
   },
-  "dependencies": {
-    "vulpem-design-system": "github:vulpemventures/vulpem-design-system"
-  }
+  "dependencies": {}
 }
