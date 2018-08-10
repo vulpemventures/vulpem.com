@@ -2,17 +2,17 @@
   "name": "vulpem.com",
   "version": "2.0.0",
   "description": "Vulpem Ventures Main Website",
-  "main": "index.js",
   "scripts": {
-    "deploy": "sh ./scripts/deploy-gh-pages"
+    "start": "node_modules/.bin/gulp default",
+    "bundle": "node_modules/.bin/gulp bundle",
+    "deploy": "sh scripts/deploy-gh-pages.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/vulpemventures/vulpem.com.git"
+    "url": "https://github.com/vulpemventures/vulpemcom.git"
   },
   "author": "Vulpem Ventures",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/vulpemventures/vulpem.com#readme",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.14.0",
