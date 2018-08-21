@@ -1,4 +1,3 @@
-//@import "./style_old.scss";
 @import "../../node_modules/bulma/bulma.sass";
 @import "./lib/variables/typography.scss";
 @import "./lib/variables/colors.scss";
@@ -10,17 +9,19 @@
 @import "lib/components/menu";
 @import "lib/components/post";
 @import "lib/components/content";
-@import "lib/components/footer";
 
 @import "lib/components/navbar.scss";
 @import "./lib/components/top-section";
 @import "./lib/components/info-section.scss";
+@import "./lib/components/images-section.scss";
+@import "lib/components/footer";
 
 body {
   margin: 0;
 }
 .container{
   max-width: 1440px;
+  width: 100%;
 }
 
 a {

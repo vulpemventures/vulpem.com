@@ -8031,6 +8031,12 @@ label.panel-block {
     left: -126px;
     top: 6px; }
 
+.link {
+  letter-spacing: -1.9px; }
+
+.link-underline {
+  border-bottom: 1px solid; }
+
 .f-size-1 {
   font-size: 0.75rem; }
 
@@ -8610,80 +8616,6 @@ label.panel-block {
       margin-top: 8px;
       margin-left: 32px; }
 
-.footer {
-  padding: 114px 185px;
-  padding-right: 55px;
-  background: #222222;
-  color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% 1fr 1fr 1fr;
-  grid-template-columns: 40% 1fr 1fr 1fr;
-  -ms-grid-rows: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: " vulpem-logo quotation quotation quotation " " vulpem-logo info-office info-message info-social " " . info-privacy-policy info-work . " " info-copyright . . . "; }
-  .footer .vulpem-logo {
-    grid-area: vulpem-logo; }
-    .footer .vulpem-logo .vulpem-logo-img {
-      background-image: url(../images/logo/100x86.png);
-      background-size: contain;
-      width: 75px;
-      height: 65px; }
-    .footer .vulpem-logo .vulpem-motto {
-      font-family: Agan65;
-      font-size: 0.75rem;
-      margin-top: 24px; }
-  .footer .quotation {
-    grid-area: quotation;
-    font-family: Playfair Display, serif;
-    font-size: 1.5rem;
-    padding-bottom: 96px;
-    padding-top: 39px;
-    width: 600px; }
-  .footer .info-office {
-    grid-area: info-office; }
-    .footer .info-office .office {
-      margin-bottom: 33px; }
-  .footer .info-message {
-    grid-area: info-message; }
-  .footer .info-social {
-    grid-area: info-social; }
-  .footer .info-privacy-policy {
-    grid-area: info-privacy-policy; }
-    .footer .info-privacy-policy .underlined {
-      font-size: 0.5625rem; }
-  .footer .info-work {
-    grid-area: info-work; }
-    .footer .info-work .underlined {
-      font-size: 0.5625rem; }
-  .footer .info-copyright {
-    grid-area: info-copyright;
-    font-family: Agan65;
-    font-size: 0.625rem; }
-  .footer .info-title {
-    font-family: Agan65;
-    font-size: 1rem;
-    margin-bottom: 26px; }
-  .footer .info-office,
-  .footer .info-message,
-  .footer .info-social {
-    font-family: Agan45;
-    font-size: 0.875rem; }
-    .footer .info-office p,
-    .footer .info-message p,
-    .footer .info-social p {
-      margin: 8px 0; }
-    .footer .info-office a,
-    .footer .info-message a,
-    .footer .info-social a {
-      font-weight: normal; }
-  .footer .info-social p {
-    margin: 18px 0; }
-  .footer .underlined {
-    border-bottom: 2px solid white;
-    padding: 5px 0;
-    margin-top: 3px; }
-
 .navbar {
   background-color: transparent;
   padding: 22px 0 0; }
@@ -8817,7 +8749,7 @@ label.panel-block {
   .top-section .container {
     height: 100%; }
   .top-section .top-section-title-lg {
-    margin-bottom: 110px; }
+    margin-bottom: 108px; }
   .top-section .top-section-subtitle {
     font-size: 18px;
     font-weight: 400;
@@ -8841,7 +8773,8 @@ label.panel-block {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-right: 14px; }
   .scroll-down .scroll-down-text {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -8858,12 +8791,21 @@ label.panel-block {
   height: 50px; }
   .scroll-down-button .scroll-down-button-icon {
     color: #ffffff;
-    font-size: 34px; }
+    font-size: 34px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+    top: -2px;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
 
 .top-section-content {
-  padding-top: 25%;
-  padding-left: 27.5%;
-  padding-right: 27%;
+  padding-top: 23.5%;
+  padding-left: 29%;
+  padding-right: 28%;
   padding-bottom: 6%; }
 
 .main-slider {
@@ -8961,7 +8903,10 @@ label.panel-block {
 .info-section {
   background-color: #000; }
   .info-section .info-section-content {
-    padding: 8% 5.2% 7%; }
+    padding: 7.6% 8.2% 6.8%; }
+  .info-section .info-section-large {
+    padding-top: 14.8%;
+    padding-bottom: 13%; }
   .info-section .info-section-subtitle-top {
     font-size: 12px;
     text-transform: uppercase;
@@ -8980,11 +8925,142 @@ label.panel-block {
     margin-left: 11.5%;
     margin-bottom: 38px; }
 
+.company-list .company-list-item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.company-list .company-list-item-image {
+  width: 100%;
+  max-width: 200px; }
+
+.info-section-company-list {
+  margin: 190px 5.3%; }
+
+.columns.is-gapless.images-section {
+  margin-bottom: 0; }
+
+.images-section-item {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  max-height: 640px; }
+  @media screen and (max-width: 768px) {
+    .images-section-item {
+      max-height: 416px; } }
+
+.images-section-item-image {
+  width: 100%;
+  height: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
+
+.images-section-item-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.footer {
+  background-color: #1c1c1c;
+  padding-top: 7.7%;
+  color: #ffffff;
+  font-family: Agan65;
+  font-weight: 400; }
+  .footer .container {
+    max-width: 1071px; }
+  .footer .footer-right-column {
+    -webkit-flex-basis: 14.5%;
+    -ms-flex-preferred-size: 14.5%;
+    flex-basis: 14.5%;
+    padding-top: 53px; }
+  .footer .footer-address-column {
+    -webkit-flex-basis: 13%;
+    -ms-flex-preferred-size: 13%;
+    flex-basis: 13%; }
+  .footer .footer-social-column {
+    text-align: center;
+    -webkit-flex-basis: 5%;
+    -ms-flex-preferred-size: 5%;
+    flex-basis: 5%; }
+  .footer .footer-social-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer .footer-social-link {
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2px; }
+  .footer .footer-logo-image {
+    width: 75px;
+    height: 65px;
+    margin-bottom: 19px; }
+  .footer .footer-logo-text {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0; }
+  .footer .copyright {
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 13px;
+    margin-top: 37px;
+    margin-bottom: 4px; }
+  .footer .copyright-small {
+    letter-spacing: 0.5px; }
+  .footer .footer-slogan {
+    font-family: Playfair Display, serif;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 93px; }
+  .footer .footer-title {
+    margin-bottom: 20px; }
+  .footer .footer-address {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px; }
+  .footer .footer-bottom {
+    margin-top: 48px;
+    font-size: 9px;
+    letter-spacing: -0.18px;
+    line-height: 11px; }
+    .footer .footer-bottom .footer-right-column {
+      padding-top: 0; }
+    .footer .footer-bottom .link {
+      letter-spacing: 0; }
+
 body {
   margin: 0; }
 
 .container {
-  max-width: 1440px; }
+  max-width: 1440px;
+  width: 100%; }
 
 a {
   text-decoration: none;

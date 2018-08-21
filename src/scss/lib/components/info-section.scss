@@ -1,7 +1,12 @@
 .info-section{
   background-color: #000;
   .info-section-content{
-    padding: 8% 5.2% 7%;
+    padding: 7.6% 8.2% 6.8%;
+  }
+  .info-section-large{
+    padding-top: 14.8%;
+    padding-bottom: 13%;
+
   }
   .info-section-subtitle-top{
     font-size: 12px;
@@ -24,5 +29,19 @@
     margin-left: 11.5%;
     margin-bottom: 38px;
   }
+}
+
+.company-list{
+  .company-list-item{
+    justify-content: center;
+  }
+  .company-list-item-image{
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.info-section-company-list{
+  margin: 190px 5.3%;
 }
 
