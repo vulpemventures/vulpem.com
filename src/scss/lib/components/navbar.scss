@@ -9,9 +9,9 @@
     background-color: transparent;
     font-weight: 400;
     align-self: center;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.3px;
     word-spacing: -2px;
-    margin-left: 41px;
+    margin-left: 40px;
     &:hover{
       background-color: transparent;
       color: $gray-400;
@@ -35,10 +35,10 @@
     .button{
       font-size: 11px;
       font-weight: 400;
-      line-height: normal;
+      line-height: 10px;
       height: 32px;
       width: 108px;
-      margin-left: 54px;
+      margin-left: 53px;
       &:hover,&:active,&:focus{
         background-color: transparent;
         outline: none;

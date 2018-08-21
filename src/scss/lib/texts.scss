@@ -1,11 +1,11 @@
-.title-lg{
+.title.title-lg{
   font-family: $font-family-serif;
   color: #ffffff;
   font-size: 54px;
   letter-spacing: -0.49px;
   line-height: 72px;
   font-weight: 400;
-  margin-bottom: 30px!important;
+  margin-bottom: 30px;
   @include mobile{
     font-size: 24px;
   }
@@ -34,14 +34,6 @@
   letter-spacing: -0.5px;
   padding-bottom: 8px;
   transition: 0.3s ease-out;
-  &:after{
-    content: '';
-    display: inline-block;
-    width: 100%;
-    border-bottom: 3px solid #fff;
-    position: relative;
-    bottom: 5px;
-  }
   &:hover,&:focus{
     color: $gray-400;
     outline: none;
@@ -54,8 +46,25 @@
   }
 }
 
-.subtitle-left-border{
-  margin-bottom: 34px!important;
+.subtitle-link_bordered{
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+.subtitle_centered{
+  margin: 0 auto;
+}
+
+.subtitle.subtitle-left-border{
+  margin-bottom: 34px;
+  position: relative;
+  margin-left: 127px;
   &:before{
     content: '';
     display: inline-block;
@@ -64,5 +73,8 @@
     margin-right: 23px;
     margin-bottom: 2px;
     margin-left: 1px;
+    position: absolute;
+    left: -126px;
+    top: 6px;
   }
 }

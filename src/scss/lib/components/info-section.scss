@@ -1,0 +1,28 @@
+.info-section{
+  background-color: #000;
+  .info-section-content{
+    padding: 8% 5.2% 7%;
+  }
+  .info-section-subtitle-top{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 121px;
+    letter-spacing: 0.3px;
+    margin-bottom: 100px;
+    &:before{
+      margin-left: 8px;
+    }
+  }
+  .info-section-subtitle-bottom{
+    font-size: 18px;
+    margin-left: 11.5%;
+    margin-right: 10%;
+    line-height: 21px;
+    margin-bottom: 3%;
+  }
+  .info-section-title-lg{
+    margin-left: 11.5%;
+    margin-bottom: 38px;
+  }
+}
+
