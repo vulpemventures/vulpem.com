@@ -6,25 +6,44 @@
   }
   .top-section-title-lg{
     margin-bottom: 108px;
+    @include mobile{
+      margin-bottom: 42px;
+    }
   }
   .top-section-subtitle{
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     margin-bottom: 97px;
+    @include mobile{
+      margin-left: 70px;
+      line-height: 23px;
+      margin-bottom: 94px;
+      font-size: 17px;
+    }
   }
 }
 
 .scroll-down{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 14px;
+  text-align: center;
+  .scroll-down-link{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    @include mobile{
+      margin-right: 8px;
+    }
+  }
   .scroll-down-text{
     align-self: center;
     letter-spacing: 0.8px;
     margin-bottom: 16px;
+    @include mobile{
+      letter-spacing: 0;
+      margin-bottom: 15px;
+    }
   }
 }
 .scroll-down-button{
@@ -33,6 +52,11 @@
   background-color: transparent;
   width: 50px;
   height: 50px;
+  outline: none;
+  &:hover,&:focus,&:active{
+    outline: none;
+    box-shadow: none;
+  }
   .scroll-down-button-icon{
     color: #ffffff;
     font-size: 34px;
@@ -52,6 +76,11 @@
   padding-left: 29%;
   padding-right: 28%;
   padding-bottom: 6%;
+  @include mobile{
+    padding-top: 38%;
+    padding-left: 13%;
+    padding-right: 11%;
+  }
 }
 
 .main-slider{

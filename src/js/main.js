@@ -33,4 +33,9 @@ $(function () {
     let windowHeight = window.innerHeight;
     $('.navbar-menu-mobile').css({'height':windowHeight+'px'});
   });
+
+  $('a.scroll-down-link').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
 });

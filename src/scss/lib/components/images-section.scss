@@ -7,20 +7,45 @@
   overflow: hidden;
   background-size: cover;
   position: relative;
-  max-height: 640px;
+  height: 640px;
   @include mobile{
-    max-height: 416px;
+    height: 416px;
   }
 }
 .images-section-item-image{
-  width: 100%;
+  width: auto;
+  max-width: fit-content;
   height: 100%;
   align-self: center;
+  min-width: 100%;
 }
 .images-section-item-content{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24.5%;
+  right: 10%;
   bottom: 0;
-  left: 0;
+  left: 18%;
+  font-family: $font-tag;
+  .images-section-item-title{
+    font-size: 21px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-bottom: 32%;
+  }
+  .images-section-item-title-bordered{
+    &:after{
+      content: '';
+      display: block;
+      border-bottom: 1px solid #ffffff;
+      width: 60px;
+      position: relative;
+      top: 38px;
+    }
+  }
+  .images-section-item-subtitle{
+    font-size: 11px;
+    letter-spacing: 0.02px;
+    line-height: 24px;
+  }
 }
