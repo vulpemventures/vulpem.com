@@ -1,0 +1,93 @@
+.info-section{
+  background-color: #000;
+  .info-section-content{
+    padding: 7.6% 8.2% 6.8%;
+    @include mobile{
+      padding: 7.6% 10% 21.8% 6%;
+    }
+  }
+  .info-section-large{
+    padding-top: 14.8%;
+    padding-bottom: 13%;
+    @include mobile{
+      padding-top: 25.8%;
+      padding-right: 5%;
+      .info-section-title-lg{
+        margin-bottom: 36px;
+      }
+    }
+  }
+  .info-section-subtitle-top{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 121px;
+    letter-spacing: 0.3px;
+    margin-bottom: 100px;
+    @include mobile{
+      font-size: 10px;
+      margin-left: 49px;
+      margin-bottom: 69px;
+    }
+    &:before{
+      margin-left: 8px;
+      @include mobile{
+        width: 35px;
+        left: -55px;
+        top: 10px;
+      }
+    }
+  }
+  .info-section-subtitle-bottom{
+    font-size: 18px;
+    margin-left: 11.5%;
+    margin-right: 10%;
+    line-height: 21px;
+    margin-bottom: 3%;
+    @include mobile{
+      font-size: 16px;
+      margin-left: 0.5px;
+      margin-right: 0;
+      line-height: 24px;
+      margin-bottom: 3%;
+      letter-spacing: -0.9px;
+    }
+  }
+  .info-section-title-lg{
+    margin-left: 11.5%;
+    margin-bottom: 38px;
+    @include mobile{
+      letter-spacing: 0;
+      margin-bottom: 30px;
+      margin-left: 0.5%;
+    }
+  }
+}
+
+.company-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .company-list-item{
+    justify-content: center;
+    @include mobile{
+      flex: 50%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .company-list-item-image{
+    width: 100%;
+    max-width: 200px;
+    @include mobile{
+      max-width: 135px;
+    }
+  }
+}
+
+.info-section-company-list{
+  margin: 190px 5.3%;
+  @include mobile{
+    margin: 54px 3%;
+  }
+}
+

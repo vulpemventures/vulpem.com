@@ -14,6 +14,7 @@
   "author": "Vulpem Ventures",
   "license": "MIT",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.14.0",
     "buffer": "^3.6.0",

@@ -30,14 +30,16 @@ gulp.task('vendors', () => {
   'use strict';
 
   const vendor_css = gulp.src([
-    './node_modules/slick-carousel/slick/slick.css'
+    './node_modules/slick-carousel/slick/slick.css',
+    './node_modules/@fortawesome/fontawesome-free/css/all.css'
   ])
     .pipe(concat('vendors.css'))
     .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
 
   const vendor_js = gulp.src([
     './node_modules/jquery/dist/jquery.js',
-    './node_modules/slick-carousel/slick/slick.js'
+    './node_modules/slick-carousel/slick/slick.js',
+    './node_modules/@fortawesome/fontawesome-free/js/all.js'
   ])
     .pipe(babel())
     .pipe(concat('vendors.js'))

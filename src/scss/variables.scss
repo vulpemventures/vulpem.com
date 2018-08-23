@@ -1,17 +1,66 @@
 $font-menu: Agan65;
 $font-text: Agan45;
 $font-tag: Agan55;
-$font-post: "Playfair Display", serif;
+$font-post: Playfair Display, serif;
 
 @font-face {
   font-family: Agan65;
-  src: url("../../src/fonts/agan-65.ttf");
+  src: url("../fonts/agan-65.ttf");
 }
 @font-face {
   font-family: Agan45;
-  src: url("../../src/fonts/agan-45.ttf");
+  src: url("../fonts/agan-45.ttf");
 }
 @font-face {
   font-family: Agan55;
-  src: url("../../src/fonts/agan-55.ttf");
+  src: url("../fonts/agan-55.ttf");
 }
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Playfair Display;
+  src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
