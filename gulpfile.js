@@ -11,12 +11,15 @@ const gulp      = require('gulp'),
   uglify        = require('gulp-uglify'),
   useref        = require('gulp-useref'),
   plumber       = require('gulp-plumber'),
-  imagemin      = require('gulp-imagemin')
+  imagemin      = require('gulp-imagemin'),
   size          = require('gulp-filesize'),
   gulpStylelint = require('gulp-stylelint'),
   minifyCSS     = require('gulp-minify-css'),
   autoprefixer  = require('gulp-autoprefixer'),
-  browserSync   = require('browser-sync').create();
+  browserSync   = require('browser-sync').create(),
+  shell = require('gulp-shell');
+
+gulp.task('generate-styleguid', shell.task('styledown src/styleguid/config.md > src/styleguid/styleguide.html'))
 
 
 gulp.task('js', () => {
@@ -86,6 +89,7 @@ gulp.task('serve', ['scss-to-css', 'vendors'], () => {
   gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
+  gulp.watch(WORK_OUT_FOLDER + 'styleguid/*.html').on('change',() => setTimeout(browserSync.reload, 3000));
 });
 
 gulp.task('watch', ['serve'], () => {
@@ -95,6 +99,8 @@ gulp.task('watch', ['serve'], () => {
   gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'scss/lib/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'js/**/*.js', ['js']);
+  gulp.watch(WORK_OUT_FOLDER + 'styleguid/**/*.md', ['generate-styleguid']);
+  gulp.watch(WORK_OUT_FOLDER + 'styleguid/**/*.css', ['generate-styleguid']);
 });
 
 gulp.task('default', ['watch']);

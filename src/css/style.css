@@ -7982,6 +7982,11 @@ label.panel-block {
     .subtitle {
       font-size: 15px; } }
 
+.subtitle-large {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px; }
+
 .subtitle-link {
   font-family: Agan65, sans-serif;
   color: #ffffff;
@@ -9305,3 +9310,6 @@ a {
 
 .is-opacity {
   opacity: 0; }
+
+.color-white {
+  color: #ffffff; }
