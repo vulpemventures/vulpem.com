@@ -28,7 +28,7 @@
   font-family: $font-tag;
   .images-section-item-title{
     font-size: 21px;
-    color: #fff;
+    color: $white;
     font-weight: 400;
     letter-spacing: -0.5px;
     margin-bottom: 32%;
@@ -37,7 +37,7 @@
     &:after{
       content: '';
       display: block;
-      border-bottom: 1px solid #ffffff;
+      border-bottom: 1px solid $white;
       width: 60px;
       position: relative;
       top: 38px;

@@ -34,8 +34,8 @@
   background: transparent;
   color: $black;
   &-white{
-    border: $border-btn solid #fff;
-    color: #ffffff;
+    border: $border-btn solid $white;
+    color: $white;
     line-height: 0;
   }
   &:hover {

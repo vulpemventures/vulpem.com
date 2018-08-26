@@ -1,7 +1,12 @@
 /*global require*/
-const WORK_OUT_FOLDER = require('./config.json').WORK_OUT_FOLDER,
-  PROD_FOLDER = require('./config.json').PROD_FOLDER;
+const {
+  STYLE_GUID_FOLDER,
+  WORK_OUT_FOLDER,
+  PROD_FOLDER
+} = require('./config.json');
 
+const exec = require('child_process').exec;
+//Gulp related dependencies
 const gulp      = require('gulp'),
   gulpif        = require('gulp-if'),
   sass          = require('gulp-sass'),
@@ -11,13 +16,16 @@ const gulp      = require('gulp'),
   uglify        = require('gulp-uglify'),
   useref        = require('gulp-useref'),
   plumber       = require('gulp-plumber'),
-  imagemin      = require('gulp-imagemin')
+  imagemin      = require('gulp-imagemin'),
   size          = require('gulp-filesize'),
   gulpStylelint = require('gulp-stylelint'),
   minifyCSS     = require('gulp-minify-css'),
   autoprefixer  = require('gulp-autoprefixer'),
   browserSync   = require('browser-sync').create();
 
+
+gulp.task('styleguid', () => 
+  exec(`node_modules/styledown/bin/styledown public/styleguid/config.md > public/styleguid/styleguide.html`))
 
 gulp.task('js', () => {
   'use strict';
@@ -81,11 +89,12 @@ gulp.task('scss-to-css', ['lint-css'], () => {
 
 gulp.task('serve', ['scss-to-css', 'vendors'], () => {
   browserSync.init({
-    server: WORK_OUT_FOLDER
+    server: [WORK_OUT_FOLDER,STYLE_GUID_FOLDER]
   });
   gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
+  gulp.watch(STYLE_GUID_FOLDER + '*.html').on('change',() => setTimeout(browserSync.reload, 3000));
 });
 
 gulp.task('watch', ['serve'], () => {
@@ -95,6 +104,8 @@ gulp.task('watch', ['serve'], () => {
   gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'scss/lib/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'js/**/*.js', ['js']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.md', ['styleguid']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.css', ['styleguid']);
 });
 
 gulp.task('default', ['watch']);

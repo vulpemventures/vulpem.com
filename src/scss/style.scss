@@ -38,7 +38,7 @@ a {
 
 .left-line {
   @extend %left-line-shared;
-  border: 1px solid #ffffff;
+  border: 1px solid $white;
 }
 
 .main.white .masthead {
@@ -75,4 +75,7 @@ a {
   opacity: 0;
 }
 
+.color-white{
+  color: $white;
+}
 
