@@ -1,6 +1,6 @@
 .title.title-lg{
   font-family: $font-family-serif;
-  color: #ffffff;
+  color: $white;
   font-size: 54px;
   letter-spacing: -0.49px;
   line-height: 72px;
@@ -17,7 +17,7 @@
 .subtitle{
   font-size: 10px;
   font-family: $font-text,sans-serif;
-  color: #ffffff;
+  color: $white;
   line-height: 13px;
   margin-top: 0;
   font-weight: 400;
@@ -34,7 +34,7 @@
 
 .subtitle-link{
   font-family: $font-menu,sans-serif;
-  color: #ffffff;
+  color: $white;
   font-size: 15px;
   line-height: 18px;
   align-self: flex-end;
@@ -59,7 +59,7 @@
     content: '';
     display: inline-block;
     width: 100%;
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid $white;
     position: relative;
     bottom: 5px;
   }
@@ -84,7 +84,7 @@
     content: '';
     display: inline-block;
     width: 102px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid $white;
     margin-right: 23px;
     margin-bottom: 2px;
     margin-left: 1px;
@@ -108,7 +108,7 @@
   &:after{
     content: '';
     display: inline-block;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid $white;
     width: 100%;
     position: absolute;
     bottom: -2px;
