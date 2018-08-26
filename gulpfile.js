@@ -1,8 +1,12 @@
 /*global require*/
-const WORK_OUT_FOLDER = require('./config.json').WORK_OUT_FOLDER,
-  PROD_FOLDER = require('./config.json').PROD_FOLDER,
-  STYLE_GUID_FOLDER = require('./config.json').STYLE_GUID_FOLDER;
+const {
+  STYLE_GUID_FOLDER,
+  WORK_OUT_FOLDER,
+  PROD_FOLDER
+} = require('./config.json');
 
+const exec = require('child_process').exec;
+//Gulp related dependencies
 const gulp      = require('gulp'),
   gulpif        = require('gulp-if'),
   sass          = require('gulp-sass'),
@@ -17,11 +21,11 @@ const gulp      = require('gulp'),
   gulpStylelint = require('gulp-stylelint'),
   minifyCSS     = require('gulp-minify-css'),
   autoprefixer  = require('gulp-autoprefixer'),
-  browserSync   = require('browser-sync').create(),
-  shell = require('gulp-shell');
+  browserSync   = require('browser-sync').create();
 
-gulp.task('generate-styleguid', shell.task('styledown public/styleguid/config.md > public/styleguid/styleguide.html'))
 
+gulp.task('styleguid', () => 
+  exec(`node_modules/styledown/bin/styledown public/styleguid/config.md > public/styleguid/styleguide.html`))
 
 gulp.task('js', () => {
   'use strict';
@@ -100,8 +104,8 @@ gulp.task('watch', ['serve'], () => {
   gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'scss/lib/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'js/**/*.js', ['js']);
-  gulp.watch(STYLE_GUID_FOLDER + '**/*.md', ['generate-styleguid']);
-  gulp.watch(STYLE_GUID_FOLDER + '**/*.css', ['generate-styleguid']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.md', ['styleguid']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.css', ['styleguid']);
 });
 
 gulp.task('default', ['watch']);

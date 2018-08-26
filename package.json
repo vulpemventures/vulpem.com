@@ -4,8 +4,10 @@
   "description": "Vulpem Ventures Main Website",
   "scripts": {
     "start": "node_modules/.bin/gulp default",
+    "serve": "node_modules/.bin/gulp serve",
     "bundle": "node_modules/.bin/gulp bundle",
-    "deploy": "sh scripts/deploy-gh-pages.sh"
+    "deploy": "sh scripts/deploy-gh-pages.sh",
+    "styleguid": "node_modules/.bin/gulp styleguid"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,6 @@
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
-    "gulp-shell": "^0.6.5",
     "gulp-stylelint": "^7.0.0",
     "gulp-uglify": "^1.5.4",
     "gulp-useref": "^3.1.5",
