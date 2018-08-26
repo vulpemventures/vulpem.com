@@ -7959,7 +7959,7 @@ label.panel-block {
 
 .title.title-lg {
   font-family: "Playfair Display", serif;
-  color: #ffffff;
+  color: white;
   font-size: 54px;
   letter-spacing: -0.49px;
   line-height: 72px;
@@ -7974,7 +7974,7 @@ label.panel-block {
 .subtitle {
   font-size: 10px;
   font-family: Agan45, sans-serif;
-  color: #ffffff;
+  color: white;
   line-height: 13px;
   margin-top: 0;
   font-weight: 400; }
@@ -7989,7 +7989,7 @@ label.panel-block {
 
 .subtitle-link {
   font-family: Agan65, sans-serif;
-  color: #ffffff;
+  color: white;
   font-size: 15px;
   line-height: 18px;
   -webkit-align-self: flex-end;
@@ -8015,7 +8015,7 @@ label.panel-block {
   content: '';
   display: inline-block;
   width: 100%;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid white;
   position: relative;
   bottom: 5px; }
 
@@ -8037,7 +8037,7 @@ label.panel-block {
     content: '';
     display: inline-block;
     width: 102px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid white;
     margin-right: 23px;
     margin-bottom: 2px;
     margin-left: 1px;
@@ -8059,7 +8059,7 @@ label.panel-block {
   .link-underline:after {
     content: '';
     display: inline-block;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid white;
     width: 100%;
     position: absolute;
     bottom: -2px;
@@ -8243,8 +8243,8 @@ label.panel-block {
   background: transparent;
   color: #0a0a0a; }
   .btn-o-white {
-    border: 1pt solid #fff;
-    color: #ffffff;
+    border: 1pt solid white;
+    color: white;
     line-height: 0; }
   .btn-o:hover {
     background: #0a0a0a;
@@ -8652,7 +8652,7 @@ label.panel-block {
     .navbar {
       padding-top: 11px; } }
   .navbar .navbar-item {
-    color: #ffffff;
+    color: white;
     font-family: Agan65, sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -8708,7 +8708,7 @@ label.panel-block {
       -ms-transform: translateY(-10px) rotate(-45deg);
       transform: translateY(-10px) rotate(-45deg); }
     .navbar .navbar-burger span {
-      background-color: #ffffff;
+      background-color: white;
       width: 34px;
       -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
@@ -8757,7 +8757,7 @@ label.panel-block {
     background-color: transparent; }
   .navbar-menu-mobile .menu-list-item a {
     font-size: 20px;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     text-align: center;
     line-height: 25px; }
@@ -8782,7 +8782,7 @@ label.panel-block {
   margin: 0; }
 
 .top-section {
-  background-color: #000;
+  background-color: #0a0a0a;
   min-height: 100vh; }
   .top-section .container {
     height: 100%; }
@@ -8841,7 +8841,7 @@ label.panel-block {
 
 .scroll-down-button {
   border-radius: 100%;
-  border: 1px solid #ffffff;
+  border: 1px solid white;
   background-color: transparent;
   width: 50px;
   height: 50px;
@@ -8850,9 +8850,9 @@ label.panel-block {
     outline: none;
     box-shadow: none; }
   .scroll-down-button .scroll-down-button-icon {
-    color: #ffffff;
+    color: white;
     font-size: 34px;
-    border: solid #fff;
+    border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 6px;
@@ -8944,7 +8944,7 @@ label.panel-block {
       display: block;
       background-color: transparent;
       outline: none;
-      color: #fff;
+      color: white;
       font-family: "Playfair Display", serif;
       font-size: 20px;
       border: none;
@@ -8966,7 +8966,7 @@ label.panel-block {
   flex: 1; }
 
 .info-section {
-  background-color: #000; }
+  background-color: #0a0a0a; }
   .info-section .info-section-content {
     padding: 7.6% 8.2% 6.8%; }
     @media screen and (max-width: 768px) {
@@ -9102,14 +9102,14 @@ label.panel-block {
   font-family: Agan55; }
   .images-section-item-content .images-section-item-title {
     font-size: 21px;
-    color: #fff;
+    color: white;
     font-weight: 400;
     letter-spacing: -0.5px;
     margin-bottom: 32%; }
   .images-section-item-content .images-section-item-title-bordered:after {
     content: '';
     display: block;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid white;
     width: 60px;
     position: relative;
     top: 38px; }
@@ -9121,7 +9121,7 @@ label.panel-block {
 .footer {
   background-color: #1c1c1c;
   padding-top: 7.7%;
-  color: #ffffff;
+  color: white;
   font-family: Agan65;
   font-weight: 400; }
   @media screen and (max-width: 768px) {
@@ -9175,7 +9175,7 @@ label.panel-block {
     align-items: center; }
   .footer .footer-social-link {
     display: inline-block;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid white;
     margin-bottom: 2px; }
   .footer .footer-logo-image {
     width: 75px;
@@ -9280,7 +9280,7 @@ a {
   margin-right: 24px; }
 
 .left-line {
-  border: 1px solid #ffffff; }
+  border: 1px solid white; }
 
 .main.white .masthead {
   color: #0a0a0a; }
@@ -9312,4 +9312,4 @@ a {
   opacity: 0; }
 
 .color-white {
-  color: #ffffff; }
+  color: white; }

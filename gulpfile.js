@@ -1,6 +1,7 @@
 /*global require*/
 const WORK_OUT_FOLDER = require('./config.json').WORK_OUT_FOLDER,
-  PROD_FOLDER = require('./config.json').PROD_FOLDER;
+  PROD_FOLDER = require('./config.json').PROD_FOLDER,
+  STYLE_GUID_FOLDER = require('./config.json').STYLE_GUID_FOLDER;
 
 const gulp      = require('gulp'),
   gulpif        = require('gulp-if'),
@@ -19,7 +20,7 @@ const gulp      = require('gulp'),
   browserSync   = require('browser-sync').create(),
   shell = require('gulp-shell');
 
-gulp.task('generate-styleguid', shell.task('styledown src/styleguid/config.md > src/styleguid/styleguide.html'))
+gulp.task('generate-styleguid', shell.task('styledown public/styleguid/config.md > public/styleguid/styleguide.html'))
 
 
 gulp.task('js', () => {
@@ -84,12 +85,12 @@ gulp.task('scss-to-css', ['lint-css'], () => {
 
 gulp.task('serve', ['scss-to-css', 'vendors'], () => {
   browserSync.init({
-    server: WORK_OUT_FOLDER
+    server: [WORK_OUT_FOLDER,STYLE_GUID_FOLDER]
   });
   gulp.watch(WORK_OUT_FOLDER + 'css/*.css').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + 'js/*.js').on('change', browserSync.reload);
   gulp.watch(WORK_OUT_FOLDER + '*.html').on('change', browserSync.reload);
-  gulp.watch(WORK_OUT_FOLDER + 'styleguid/*.html').on('change',() => setTimeout(browserSync.reload, 3000));
+  gulp.watch(STYLE_GUID_FOLDER + '*.html').on('change',() => setTimeout(browserSync.reload, 3000));
 });
 
 gulp.task('watch', ['serve'], () => {
@@ -99,8 +100,8 @@ gulp.task('watch', ['serve'], () => {
   gulp.watch(WORK_OUT_FOLDER + 'scss/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'scss/lib/components/**/*.scss', ['scss-to-css']);
   gulp.watch(WORK_OUT_FOLDER + 'js/**/*.js', ['js']);
-  gulp.watch(WORK_OUT_FOLDER + 'styleguid/**/*.md', ['generate-styleguid']);
-  gulp.watch(WORK_OUT_FOLDER + 'styleguid/**/*.css', ['generate-styleguid']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.md', ['generate-styleguid']);
+  gulp.watch(STYLE_GUID_FOLDER + '**/*.css', ['generate-styleguid']);
 });
 
 gulp.task('default', ['watch']);
