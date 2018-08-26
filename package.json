@@ -40,7 +40,7 @@
     "merge": "^1.2.0",
     "push-dir": "^0.4.1",
     "slick-carousel": "^1.8.1",
-    "styledown": "^2.0.0-pre1",
+    "styledown": "^1.0.2",
     "stylelint": "^9.4.0"
   },
   "dependencies": {}
