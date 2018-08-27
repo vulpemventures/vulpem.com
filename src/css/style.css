@@ -9347,14 +9347,17 @@ label.panel-block {
     letter-spacing: 1px;
     min-width: 110px; }
   .products-list .products-list-image {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    width: auto;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height: 100%;
+    min-width: 100%; }
 
 .footer {
   background-color: #1c1c1c;
