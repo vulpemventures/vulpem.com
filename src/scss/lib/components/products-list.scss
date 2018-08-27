@@ -1,24 +1,41 @@
 .products-list{
   flex-direction: column;
+  max-width: 100%;
+  margin: 0;
   .products-list-item{
-    position: relative;
-    overflow: hidden;
-    background-color: $product-background;
     width: 100%;
     max-width: 1168px;
     margin: 0 auto 280px;
+    padding: 0;
+    @include mobile{
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+  }
+  .products-list-item-description{
+    color: $black;
+    padding: 30px 0;
+    line-height: 30px;
+    @include mobile{
+      padding: 30px;
+      width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  .products-list-item-content{
+    position: relative;
+    overflow: hidden;
+    background-color: $product-background;
     min-height: 560px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $white;
-    padding-top: 30px;
+    padding: 30px 12px 12px;
     *{
       z-index: 1;
-    }
-    @include mobile{
-      margin-bottom: 0;
     }
   }
   .products-list-subtitle{
