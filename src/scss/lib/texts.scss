@@ -1,3 +1,9 @@
+.title {
+  font-family: $font-family-serif;
+  color: $white;
+  font-weight: 400;
+}
+
 .title.title-lg{
   font-family: $font-family-serif;
   color: $white;
@@ -12,6 +18,11 @@
     line-height: 36px;
   }
 
+}
+
+.title.title-middle{
+  font-size: 36px;
+  line-height: 48px;
 }
 
 .subtitle{
@@ -69,6 +80,10 @@
   margin: 0 auto;
 }
 
+.subtitle-large{
+  font-size: 18px;
+}
+
 .subtitle.subtitle-left-border{
   margin-bottom: 34px;
   position: relative;
@@ -102,9 +117,17 @@
 .link{
   letter-spacing: -1.9px;
   display: inline-block;
+  &:hover{
+    color: $btn-hover-color;
+  }
 }
 .link-underline{
   position: relative;
+  &:hover{
+    &:after{
+      border-color: $btn-hover-color;
+    }
+  }
   &:after{
     content: '';
     display: inline-block;
@@ -115,5 +138,17 @@
     right: 0;
     left: 0;
 
+  }
+}
+
+.content-black{
+  color: $black;
+  .title,.subtitle{
+    color: $black;
+  }
+  .subtitle-left-border{
+    &:before{
+      border-color: $black;
+    }
   }
 }
