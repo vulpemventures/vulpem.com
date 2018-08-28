@@ -33,14 +33,35 @@
   border: $border-btn solid $border-color;
   background: transparent;
   color: $black;
-  &-white{
-    border: $border-btn solid $white;
-    color: $white;
-    line-height: 0;
-  }
+  transition: 0.3s ease-out;
   &:hover {
-    background: $black;
+    background: transparent;
     color: $white;
+  }
+}
+
+.btn-o-white{
+  border: $border-btn solid $white;
+  color: $white;
+  line-height: 0;
+  &:hover {
+    color: $btn-hover-color;
+  }
+}
+
+.btn-secondary{
+  background-color: $btn-secondary-background;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 18px;
+  font-family: $font-menu;
+  border-radius: 0;
+  min-height: 56px;
+  min-width: 208px;
+  transition: 0.3s ease-out;
+  &:hover{
+    color: $btn-hover-color;
+    border-color: $btn-hover-color;
   }
 }
 

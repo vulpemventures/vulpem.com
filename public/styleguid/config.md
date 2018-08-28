@@ -30,6 +30,7 @@
       | Security, development 
       br.is-hidden-desktop
       |  and blockchain solutions.
+    h2.title.title-middle.is-spaced.info-section-title-lg Have a look on what we are working on
 
 ### subtitle
     @example
@@ -50,6 +51,7 @@
         span.subtitle.subtitle-link.scroll-down-text SCROLL DOWN
         button.button.icon.scroll-down-button
           i.scroll-down-button-icon
+    button.button.btn-secondary.products-list-button DISCOVER MORE
           
 `Footer`
 --------------
