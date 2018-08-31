@@ -153,3 +153,15 @@
     }
   }
 }
+
+.content-white{
+  color: $white;
+  .title,.subtitle{
+    color: $white;
+  }
+  .subtitle-left-border{
+    &:before{
+      border-color: $white;
+    }
+  }
+}

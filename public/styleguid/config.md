@@ -42,6 +42,38 @@
     .subtitle.subtitle-left-border
       | We offer a 360° environment for your crypto business launch, leaving you focus on develop your product.
 
+`Content`
+--------------
+    @example
+    .columns.achievements.achievements-bottom-offset
+      .column.achievements-item
+        .achievements-item-number 36
+        .title.achievements-item-title MILLION RAISED
+    .columns.info-section-content.content-with-image
+      a.column.content-item(href='./title-of-my-case-study.html')
+        img.content-item-image(src='./images/blockchain-image.jpg')
+        .subtitle.subtitle-left-border.content-item-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+        span.title.content-item-title Lorem ipsum dolor sit amet.
+      a.column.content-item(href='./title-of-my-case-study.html')
+        img.content-item-image(src='./images/token-sale-image.jpg')
+        .subtitle.subtitle-left-border.content-item-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+        span.title.content-item-title Lorem ipsum dolor sit amet.
+      a.column.content-item(href='./title-of-my-case-study.html')
+        img.content-item-image(src='./images/academy-image.jpg')
+        .subtitle.subtitle-left-border.content-item-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing.
+        span.title.content-item-title Lorem ipsum dolor sit amet.
+    
+    .column.products-list-item.content-white
+      .products-list-item-content
+        img.products-list-image(src='./images/products/product4.jpg')
+        .subtitle.products-list-subtitle Taxi, People flying, Drones
+        .title.title-lg.products-list-title VIMANA
+        button.button.btn-o.btn-o-white.is-uppercase.products-list-button Website
+      .subtitle.subtitle-large.products-list-item-description
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto atque aut commodi dolor dolore dolores et eveniet, ex, excepturi explicabo facilis inventore ipsam ipsum laborum modi neque nesciunt nihil nobis nostrum officia quam recusandae reiciendis sed sequi, vel voluptatum. Enim et excepturi ipsam mollitia natus, nobis nulla optio quidem!
+
+
+
 `Buttons`
 --------------
 

@@ -3,14 +3,17 @@
   max-width: 100%;
   margin: 0;
   .products-list-item{
-    width: 100%;
-    max-width: 1168px;
-    margin: 0 auto 280px;
-    padding: 0;
-    @include mobile{
-      margin-bottom: 0;
-      overflow: hidden;
-    }
+    margin-bottom: 280px;
+  }
+}
+.products-list-item{
+  width: 100%;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0;
+  @include mobile{
+    margin-bottom: 0;
+    overflow: hidden;
   }
   .products-list-item-description{
     color: $black;
@@ -73,5 +76,10 @@
     max-width: fit-content;
     height: 100%;
     min-width: 100%;
+  }
+  &.content-white{
+    *{
+      color: $white;
+    }
   }
 }
