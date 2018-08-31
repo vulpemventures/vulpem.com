@@ -8732,6 +8732,11 @@ label.panel-block {
   max-width: 330px;
   font-family: Agan55;
   margin-bottom: 10%; }
+  @media screen and (max-width: 768px) {
+    .content-item {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 15%; } }
   .content-item * {
     -webkit-transition: 0.3s ease-out;
     transition: 0.3s ease-out; }
@@ -8758,11 +8763,17 @@ label.panel-block {
     line-height: 19px; }
   .content-item .subtitle-left-border {
     margin-left: 56px; }
+    @media screen and (max-width: 768px) {
+      .content-item .subtitle-left-border {
+        margin-bottom: 50px; } }
     .content-item .subtitle-left-border:before {
       -webkit-transition: 0.3s ease-out;
       transition: 0.3s ease-out;
       width: 40px;
       margin-left: 70px; }
+      @media screen and (max-width: 768px) {
+        .content-item .subtitle-left-border:before {
+          margin-left: 15px; } }
 
 .navbar {
   background-color: transparent;
