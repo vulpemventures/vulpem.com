@@ -15,8 +15,8 @@
         .navbar-menu
           .navbar-end
             a.navbar-item(href='./security.html') What We Do
-            a.navbar-item Our Works
-            a.navbar-item The Platform
+            a.navbar-item(href='./products.html') Our Works
+            a.navbar-item(href='./case-studies.html') Case Studies
             button.navbar-item.button.btn-o.btn-o-white.is-uppercase Contact us
 
 ------
