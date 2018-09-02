@@ -8999,12 +8999,26 @@ label.panel-block {
   padding-top: 23.5%;
   padding-left: 29%;
   padding-right: 28%;
-  padding-bottom: 6%; }
+  padding-bottom: 6%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   @media screen and (max-width: 768px) {
     .top-section-content {
       padding-top: 38%;
       padding-left: 13%;
       padding-right: 11%; } }
+  .top-section-content .is-centered {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
 
 .top-section-content-large {
   padding-top: 35.6%;

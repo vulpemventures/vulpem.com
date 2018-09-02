@@ -79,10 +79,15 @@
   padding-left: 29%;
   padding-right: 28%;
   padding-bottom: 6%;
+  display: flex;
+  flex-direction: column;
   @include mobile{
     padding-top: 38%;
     padding-left: 13%;
     padding-right: 11%;
+  }
+  .is-centered{
+    align-self: center;
   }
 }
 
