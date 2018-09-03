@@ -1,6 +1,7 @@
 .header{
   background-color: $black;
   min-height: 100vh;
+  position: relative;
   .container{
     height: 100%;
   }
@@ -77,5 +78,20 @@
       line-height: 18px;
       margin-bottom: 73px;
     }
+  }
+}
+.header-half{
+  min-height: 50vh;
+  .header-content{
+    padding-top: 7%;
+    padding-bottom: 3%;
+    padding-left: 15%;
+    padding-right: 10%;
+    @include mobile{
+      padding-top: 15%;
+    }
+  }
+  .header-subtitle{
+    margin-bottom: 3%;
   }
 }

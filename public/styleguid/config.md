@@ -1,4 +1,63 @@
-
+`Header`
+--------------
+    @example 
+    .header
+      nav.navbar.navbar-fixed(role='navigation', aria-label='main navigation')
+        .container
+          .navbar-brand
+            a.navbar-item.navbar-brand-logo(href='/')
+              img(src='./images/logo/100x86.png')
+            a.navbar-burger(role='button', aria-label='menu', aria-expanded='false')
+              span(aria-hidden='true')
+              span(aria-hidden='true')
+              span(aria-hidden='true')
+          .navbar-menu
+            .navbar-end
+              a.navbar-item(href='./security.html') What We Do
+              a.navbar-item(href='./products.html') Our Works
+              a.navbar-item(href='./case-studies.html') Case Studies
+              button.navbar-item.button.btn-o.btn-o-white.is-uppercase Contact us
+      .container
+        .header-content.header-content-large
+          h2.title.title-lg.is-spaced.header-title-lg Platform dedicated to promote your TokenSale.
+          .subtitle.subtitle-left-border.header-subtitle
+            | The cyberpunk movement was developed by a group of people who hardly believed in a World
+            br.is-hidden-mobile
+            |  inwhich privacy and cryptography were foundamental components for reinvent the modern
+            br.is-hidden-mobile
+            |  society.
+          a.button.btn-o.btn-o-white.is-uppercase.is-centered(href='./title-of-my-case-study.html') DISCOVER MORE
+--------------
+`Header half`
+--------------
+    @example 
+    .header.header-half
+      nav.navbar.navbar-fixed(role='navigation', aria-label='main navigation')
+        .container
+          .navbar-brand
+            a.navbar-item.navbar-brand-logo(href='/')
+              img(src='./images/logo/100x86.png')
+            a.navbar-burger(role='button', aria-label='menu', aria-expanded='false')
+              span(aria-hidden='true')
+              span(aria-hidden='true')
+              span(aria-hidden='true')
+          .navbar-menu
+            .navbar-end
+              a.navbar-item(href='./security.html') What We Do
+              a.navbar-item(href='./products.html') Our Works
+              a.navbar-item(href='./case-studies.html') Case Studies
+              button.navbar-item.button.btn-o.btn-o-white.is-uppercase Contact us
+      .container
+        .header-content.header-content-large
+          h2.title.title-lg.is-spaced.header-title-lg Platform dedicated to promote your TokenSale.
+          .subtitle.subtitle-left-border.header-subtitle
+            | The cyberpunk movement was developed by a group of people who hardly believed in a World
+            br.is-hidden-mobile
+            |  inwhich privacy and cryptography were foundamental components for reinvent the modern
+            br.is-hidden-mobile
+            |  society.
+          a.button.btn-o.btn-o-white.is-uppercase.is-centered(href='./title-of-my-case-study.html') DISCOVER MORE
+--------------
 `Navbar menu`
 --------------
 
@@ -151,7 +210,7 @@
     script(src='https://cdn.rawgit.com/styledown/styledown/v1.0.2/data/styledown.js')
 
 ### Body
-    .top-section.color-white
+    .background-black.color-white
         .container
             h1.title.title_large.color-white Vulpem style guide
             div#styleguides(sg-content)  

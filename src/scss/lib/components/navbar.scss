@@ -90,6 +90,7 @@
   background-color: rgba(0, 0, 0, 0.85);
   transition: 0.5s ease-out;
   padding: 0;
+  display: flex;
   &.is-opacity{
     z-index: -1;
   }
@@ -99,6 +100,7 @@
     justify-content: space-between;
     height: 50%;
     margin: 0 auto;
+    align-self: center;
     li:first-child {
       margin: 0;
     }
