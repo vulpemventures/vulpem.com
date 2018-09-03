@@ -1,16 +1,16 @@
-.top-section{
+.header{
   background-color: $black;
   min-height: 100vh;
   .container{
     height: 100%;
   }
-  .top-section-title-lg{
+  .header-title-lg{
     margin-bottom: 108px;
     @include mobile{
       margin-bottom: 42px;
     }
   }
-  .top-section-subtitle{
+  .header-subtitle{
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
@@ -23,10 +23,10 @@
     }
   }
 }
-.top-section-gray-blue{
+.header-gray-blue{
   background-color: $gray-blue-section-cover;
 }
-.top-section-content{
+.header-content{
   padding-top: 23.5%;
   padding-left: 29%;
   padding-right: 28%;
@@ -43,7 +43,7 @@
   }
 }
 
-.top-section-content-large{
+.header-content-large{
   padding-top: 35.6%;
   padding-left: 17.7%;
   padding-right: 19%;
@@ -53,14 +53,14 @@
     padding-left: 13.7%;
     padding-right: 10%;
   }
-  .top-section-title-lg{
+  .header-title-lg{
     margin-bottom: 33px;
     @include mobile{
       line-height: 31px;
       margin-bottom: 19px;
     }
   }
-  .top-section-subtitle{
+  .header-subtitle{
     margin-left: 163px;
     &:before{
       left: -165px;
