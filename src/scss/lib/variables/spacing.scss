@@ -1,0 +1,24 @@
+// SPACES ---------- /
+
+$padding-btn-x:      16pt !default;
+$padding-btn-y:      8pt !default;
+$border-btn:         1pt !default;
+
+$border-radius-btn:   2pt !default;
+
+// $padding-btn-x-o:    7px !default;
+// $padding-btn-y-o:    7px !default;
+// $border-btn-o:       1px !default;
+
+// Space values ---------- /
+$spacing-grid-value: 8pt;
+
+@for $i from 1 through 12 {
+  .margin-#{$i} {
+    margin-bottom: $spacing-grid-value * $i;
+  }
+  
+  .padding-#{$i} {
+    padding-bottom: $spacing-grid-value * $i;
+  }
+}

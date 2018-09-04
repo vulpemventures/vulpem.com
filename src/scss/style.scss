@@ -1,14 +1,26 @@
-//@import "./style_old.scss";
-@import "node_modules/vulpem-design-system/index.scss";
-@import "./lib/variables/index.scss";
-@import "./lib/components/menu.scss";
+@import "../../node_modules/bulma/bulma.sass";
+@import "./lib/variables/typography.scss";
+@import "./lib/variables/colors.scss";
+@import "./lib/variables/spacing.scss";
+@import "variables";
+@import "./lib/texts";
+
+@import "./lib/components/button.scss";
+@import "lib/components/content";
+
+@import "lib/components/navbar.scss";
 @import "./lib/components/header.scss";
-@import "./lib/components/post.scss";
-@import "./lib/components/content.scss";
-@import "./lib/components/footer.scss";
+@import "./lib/components/info-section.scss";
+@import "./lib/components/images-section.scss";
+@import "./lib/components/products-list.scss";
+@import "lib/components/footer";
 
 body {
   margin: 0;
+}
+.container{
+  max-width: 1440px;
+  width: 100%;
 }
 
 a {
@@ -17,45 +29,22 @@ a {
   font-weight: bold;
 }
 
-%left-line-shared {
-  height: 0px;
-  width: 99px;
-  margin-right: 24px;
+.is-opacity{
+  opacity: 0;
 }
 
-.left-line {
-  @extend %left-line-shared;
-  border: 1px solid #ffffff;
-}
-
-.main.white .masthead {
-  color: $black;
-}
-
-.main.black .masthead {
+.color-white{
   color: $white;
 }
 
-.main.black,
-.main.black > .content,
-.main > .content > .black {
+.background-black{
   background-color: $black;
-  color: $white;
-}
-.main.white,
-.main.white > .content,
-.main > .content > .white {
-  background-color: $white;
-  color: $black;
 }
 
-.main > .content.black {
-  background-color: $black;
-  color: $white;
+.particles{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
-.main > .content.white {
-  background-color: $white;
-  color: $black;
-}
-
-

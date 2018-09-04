@@ -1,2 +1,0 @@
-#!/bin/bash
-node_modules/.bin/nodemon -e scss -x 'npm run build'
