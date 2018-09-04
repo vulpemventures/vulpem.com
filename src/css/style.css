@@ -8441,7 +8441,8 @@ label.panel-block {
 
 .navbar {
   background-color: transparent;
-  padding: 22px 0 0; }
+  padding: 22px 0 0;
+  z-index: 2; }
   @media screen and (max-width: 768px) {
     .navbar {
       padding-top: 11px; } }
@@ -8627,7 +8628,9 @@ label.panel-block {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  z-index: 1;
+  position: relative; }
   @media screen and (max-width: 768px) {
     .header-content {
       padding-top: 38%;
@@ -9243,3 +9246,10 @@ a {
 
 .background-black {
   background-color: #0a0a0a; }
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
