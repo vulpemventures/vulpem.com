@@ -6,12 +6,10 @@
 @import "./lib/texts";
 
 @import "./lib/components/button.scss";
-@import "lib/components/menu";
-@import "lib/components/post";
 @import "lib/components/content";
 
 @import "lib/components/navbar.scss";
-@import "./lib/components/top-section";
+@import "./lib/components/header.scss";
 @import "./lib/components/info-section.scss";
 @import "./lib/components/images-section.scss";
 @import "./lib/components/products-list.scss";
@@ -31,47 +29,6 @@ a {
   font-weight: bold;
 }
 
-%left-line-shared {
-  height: 0px;
-  width: 99px;
-  margin-right: 24px;
-}
-
-.left-line {
-  @extend %left-line-shared;
-  border: 1px solid $white;
-}
-
-.main.white .masthead {
-  color: $black;
-}
-
-.main.black .masthead {
-  color: $white;
-}
-
-.main.black,
-.main.black > .content,
-.main > .content > .black {
-  background-color: $black;
-  color: $white;
-}
-.main.white,
-.main.white > .content,
-.main > .content > .white {
-  background-color: $white;
-  color: $black;
-}
-
-.main > .content.black {
-  background-color: $black;
-  color: $white;
-}
-.main > .content.white {
-  background-color: $white;
-  color: $black;
-}
-
 .is-opacity{
   opacity: 0;
 }
@@ -80,3 +37,6 @@ a {
   color: $white;
 }
 
+.background-black{
+  background-color: $black;
+}
