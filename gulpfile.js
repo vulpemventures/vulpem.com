@@ -45,6 +45,8 @@ gulp.task('vendors', () => {
     .pipe(gulp.dest(WORK_OUT_FOLDER + 'css'));
 
   const vendor_js = gulp.src([
+    './src/js/particles.js',
+    './src/js/particles.config.js',
     './node_modules/jquery/dist/jquery.js',
     './node_modules/slick-carousel/slick/slick.js',
     './node_modules/@fortawesome/fontawesome-free/js/all.js'
