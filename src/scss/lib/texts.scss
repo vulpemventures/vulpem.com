@@ -1,11 +1,11 @@
 .title {
-  font-family: $font-family-serif;
+  font-family: $font-text;
   color: $white;
   font-weight: 400;
 }
 
 .title.title-lg{
-  font-family: $font-family-serif;
+  font-family: $font-text;
   color: $white;
   font-size: 54px;
   letter-spacing: -0.49px;
@@ -27,7 +27,7 @@
 
 .subtitle{
   font-size: 10px;
-  font-family: $font-text,sans-serif;
+  font-family: $font-family-serif,sans-serif;
   color: $white;
   line-height: 13px;
   margin-top: 0;
