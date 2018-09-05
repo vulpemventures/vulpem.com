@@ -15,8 +15,13 @@
 @import "./lib/components/products-list.scss";
 @import "lib/components/footer";
 
-body {
+html,body {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
 }
 .container{
   max-width: 1440px;
