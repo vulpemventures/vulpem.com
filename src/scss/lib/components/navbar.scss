@@ -1,6 +1,7 @@
 .navbar{
   background-color: transparent;
   padding: 22px 0 0;
+  z-index: 2;
   @include mobile{
     padding-top: 11px;
   }

@@ -15,8 +15,13 @@
 @import "./lib/components/products-list.scss";
 @import "lib/components/footer";
 
-body {
+html,body {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
 }
 .container{
   max-width: 1440px;
@@ -39,4 +44,12 @@ a {
 
 .background-black{
   background-color: $black;
+}
+
+.particles{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }

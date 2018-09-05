@@ -34,6 +34,8 @@
   padding-bottom: 6%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
+  position: relative;
   @include mobile{
     padding-top: 38%;
     padding-left: 13%;
