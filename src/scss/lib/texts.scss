@@ -1,5 +1,5 @@
 .title {
-  font-family: $font-text;
+  font-family: $font-family-serif, sans-serif;
   color: $white;
   font-weight: 400;
 }
@@ -27,7 +27,7 @@
 
 .subtitle{
   font-size: 10px;
-  font-family: $font-family-serif,sans-serif;
+  font-family: $font-text;
   color: $white;
   line-height: 13px;
   margin-top: 0;

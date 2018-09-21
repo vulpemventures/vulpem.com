@@ -7958,7 +7958,7 @@ label.panel-block {
   font-style: italic; }
 
 .title {
-  font-family: Agan45;
+  font-family: "Playfair Display", serif, sans-serif;
   color: white;
   font-weight: 400; }
 
@@ -7982,7 +7982,7 @@ label.panel-block {
 
 .subtitle {
   font-size: 10px;
-  font-family: "Playfair Display", serif, sans-serif;
+  font-family: Agan45;
   color: white;
   line-height: 13px;
   margin-top: 0;
