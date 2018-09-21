@@ -34,6 +34,11 @@ $(function () {
     $('.navbar-menu-mobile').css({'height':windowHeight+'px'});
   });
 
+  $('.contact-us').on('click', function(e) {
+    e.preventDefault();
+    window.location.href = "mailto:hello@vulpem.com";
+  });
+
   $('a.scroll-down-link').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
