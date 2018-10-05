@@ -38,10 +38,10 @@ npm i
 npm start
 ```
 
-### Run a local server 
+### Serve locally
 
 ```
-npm run server
+npm run serve
 ```
 
 ### Bundle for production

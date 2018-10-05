@@ -27,6 +27,10 @@ const gulp      = require('gulp'),
 gulp.task('styleguid', () => 
   exec(`node_modules/styledown/bin/styledown public/styleguid/config.md > public/styleguid/styleguide.html`))
 
+gulp.task('move-cname-file', () => 
+  gulp.src('./CNAME').pipe(gulp.dest(PROD_FOLDER))
+)
+
 gulp.task('js', () => {
   'use strict';
 
@@ -110,7 +114,7 @@ gulp.task('watch', ['serve'], () => {
 
 gulp.task('default', ['watch']);
 
-gulp.task('bundle', ['scss-to-css', 'vendors', 'images', 'fonts'], () => {
+gulp.task('bundle', ['scss-to-css', 'vendors', 'images', 'fonts', 'move-cname-file'], () => {
   return gulp.src([WORK_OUT_FOLDER + '*.html'])
     .pipe(useref())
     .pipe(gulpif('main.js', uglify()))
