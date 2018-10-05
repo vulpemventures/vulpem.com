@@ -68,6 +68,8 @@
   }
   .products-list-image{
     position: absolute;
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
     top: 0;
     right: 0;
     bottom: 0;

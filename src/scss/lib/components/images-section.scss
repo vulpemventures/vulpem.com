@@ -15,6 +15,8 @@
 .images-section-item-image{
   width: auto;
   max-width: fit-content;
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
   height: 100%;
   align-self: center;
   min-width: 100%;
@@ -44,7 +46,7 @@
     }
   }
   .images-section-item-subtitle{
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.02px;
     line-height: 24px;
   }
