@@ -8984,6 +8984,8 @@ label.panel-block {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%);
   height: 100%;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -9012,7 +9014,7 @@ label.panel-block {
     position: relative;
     top: 38px; }
   .images-section-item-content .images-section-item-subtitle {
-    font-size: 11px;
+    font-size: 14px;
     letter-spacing: 0.02px;
     line-height: 24px; }
 
@@ -9096,6 +9098,8 @@ label.panel-block {
     min-width: 110px; }
   .products-list-item .products-list-image {
     position: absolute;
+    -webkit-filter: brightness(40%);
+    filter: brightness(40%);
     top: 0;
     right: 0;
     bottom: 0;
