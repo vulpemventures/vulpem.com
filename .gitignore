@@ -18,3 +18,7 @@ dist
 !.vscode/extensions.json
 .history
 
+.idea
+
+# Vendors
+vendors.*

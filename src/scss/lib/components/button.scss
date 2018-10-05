@@ -1,0 +1,112 @@
+@import "../../lib/variables/typography.scss";
+@import "../../lib/variables/spacing.scss";
+
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: $font-size-base;
+  // font-weight: $font-weight-base;     #TODO variable font-weight
+  padding: $padding-btn-y $padding-btn-x;
+  border-radius: $border-radius-btn;
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+
+.btn {
+  @include button-base;
+  border: $border-btn solid transparent;
+  background: $black;
+  color: $white;
+
+  &:hover {
+    background: $gray-dark;
+  }
+}
+
+.btn-o {
+  @include button-base;
+  border: $border-btn solid $border-color;
+  background: transparent;
+  color: $black;
+  transition: 0.3s ease-out;
+  &:hover {
+    background: transparent;
+    color: $white;
+  }
+}
+
+.btn-o-white{
+  border: $border-btn solid $white;
+  color: $white;
+  line-height: 0;
+  &:hover {
+    color: $btn-hover-color;
+  }
+}
+
+.btn-secondary{
+  background-color: $btn-secondary-background;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 18px;
+  font-family: $font-menu;
+  border-radius: 0;
+  min-height: 56px;
+  min-width: 208px;
+  transition: 0.3s ease-out;
+  &:hover{
+    color: $btn-hover-color;
+    border-color: $btn-hover-color;
+  }
+}
+.scroll-down{
+  text-align: center;
+  .scroll-down-link{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+    @include mobile{
+      margin-right: 8px;
+    }
+  }
+  .scroll-down-text{
+    align-self: center;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+    @include mobile{
+      letter-spacing: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+.scroll-down-button{
+  border-radius: 100%;
+  border: 1px solid $white;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  &:hover,&:focus,&:active{
+    outline: none;
+    box-shadow: none;
+  }
+  .scroll-down-button-icon{
+    color: $white;
+    font-size: 34px;
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    position: relative;
+    top: -2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}

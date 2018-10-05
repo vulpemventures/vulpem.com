@@ -1,0 +1,256 @@
+.info-section{
+  background-color: $black;
+  .info-section-content{
+    padding: 7.6% 8.2% 6.8%;
+    @include mobile{
+      padding: 7.6% 10% 21.8% 6%;
+    }
+  }
+  .info-section-large{
+    padding-top: 14.8%;
+    padding-bottom: 13%;
+    @include mobile{
+      padding-top: 25.8%;
+      padding-right: 5%;
+      .info-section-title-lg{
+        margin-bottom: 36px;
+      }
+    }
+  }
+  .info-section-subtitle-top{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-left: 121px;
+    letter-spacing: 0.3px;
+    margin-bottom: 100px;
+    @include mobile{
+      font-size: 10px;
+      margin-left: 49px;
+      margin-bottom: 69px;
+    }
+    &:before{
+      margin-left: 8px;
+      @include mobile{
+        width: 35px;
+        left: -55px;
+        top: 10px;
+      }
+    }
+  }
+  .info-section-subtitle-bottom{
+    font-size: 18px;
+    margin-left: 11.5%;
+    margin-right: 10%;
+    line-height: 21px;
+    margin-bottom: 3%;
+    @include mobile{
+      font-size: 16px;
+      margin-left: 0.5px;
+      margin-right: 0;
+      line-height: 24px;
+      margin-bottom: 3%;
+      letter-spacing: -0.9px;
+    }
+  }
+  .info-section-title-lg{
+    margin-left: 11.5%;
+    margin-bottom: 38px;
+    @include mobile{
+      letter-spacing: 0;
+      margin-bottom: 30px;
+      margin-left: 0.5%;
+    }
+  }
+}
+
+.company-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .company-list-item{
+    justify-content: center;
+    @include mobile{
+      flex: 50%;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .company-list-item-image{
+    width: 100%;
+    max-width: 200px;
+    @include mobile{
+      max-width: 135px;
+    }
+  }
+}
+
+.info-section-company-list{
+  margin: 190px 5.3%;
+  @include mobile{
+    margin: 54px 3%;
+  }
+}
+
+.info-section-white{
+  background-color: $white;
+  .info-section-content{
+    padding: 8.8% 13.7% 8.6%;
+    @include mobile{
+      padding: 20% 5.7% 16.6%;
+    }
+  }
+  .info-section-title-lg{
+    margin-bottom: 25px;
+    @include mobile{
+      margin-bottom: 21px;
+    }
+  }
+  .subtitle-left-border{
+    margin-left: 185px;
+    &:before{
+      top: 9px;
+      @include mobile{
+        width: 103px;
+        left: -118px;
+        top: 11px;
+      }
+    }
+    @include mobile{
+      margin-left: 113px;
+      letter-spacing: 1px;
+      word-spacing: -4px;
+      margin-bottom: 34px;
+    }
+  }
+}
+.btn-secondary-with-offset{
+  margin-top: 42px;
+  margin-right: 60px;
+  @include mobile{
+    margin: 0;
+    float: none;
+  }
+}
+
+.info-section-content-right{
+  @include mobile{
+    text-align: center;
+  }
+  .btn-secondary-with-offset{
+    float: right;
+    @include mobile{
+      float: none;
+    }
+  }
+}
+
+.info-section-light{
+  background-color: $section-background-light;
+  .info-section-content{
+    padding: 10.6% 9.2% 10%;
+    @include mobile{
+      padding: 24% 7% 26%;
+    }
+  }
+  .info-section-subtitle-top{
+    margin-bottom: 118px;
+    @include mobile{
+      margin-bottom: 60px;
+      margin-left: 58px;
+    }
+    &:before{
+      @include mobile{
+        width: 33px;
+        left: -55px;
+        top: 12px;
+      }
+
+    }
+  }
+  .info-section-title-lg{
+    margin-left: 10.5%;
+    margin-bottom: 58px;
+    @include mobile{
+      margin-bottom: 42px;
+      line-height: 32px;
+    }
+  }
+  .info-section-subtitle-bottom{
+    margin-left: 10.5%;
+    @include mobile{
+      line-height: 18px;
+    }
+  }
+}
+
+.info-section-content-item{
+  margin-bottom: 228px;
+  display: block;
+  @include mobile{
+    margin-bottom: 192px;
+  }
+  .info-section-title-lg{
+    margin-left: 23.2%;
+    @include mobile{
+      margin-left: 10.2%;
+    }
+  }
+  .info-section-subtitle-bottom{
+    margin-left: 23.2%;
+    @include mobile{
+      margin-left: 11.2%;
+    }
+  }
+}
+
+.achievements{
+  font-family: $font-tag;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 19.8%;
+  @include mobile{
+    margin-left: 8.8%;
+  }
+  .achievements-item{
+    margin-bottom: 33px;
+    @include desktop{
+      flex: 50%;
+      margin-bottom: 35px;
+    }
+    .achievements-item-number{
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 8px;
+    }
+    .achievements-item-title{
+      font-size: 16px;
+      line-height: 19px;
+      font-family: $font-tag;
+      font-weight: 600;
+    }
+  }
+}
+.achievements.achievements-bottom-offset{
+  margin-bottom: 16.8%;
+  @include mobile{
+    margin-bottom: 19.8%;
+  }
+}
+
+.video-container{
+  max-width: 1168px;
+  margin: 0 auto 2%;
+  @include mobile{
+    margin: 0 auto 0;
+  }
+  .video-content{
+    width: 100%;
+    height: 100%;
+    max-height: 560px;
+    min-height: 560px;
+    @include mobile{
+      min-height: 212px;
+    }
+
+  }
+}

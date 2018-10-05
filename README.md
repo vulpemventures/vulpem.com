@@ -7,11 +7,11 @@
 
 # Deployment 
 
-The script will bundle (`npm run bundle`) and commit the subtree located in `/dist`. 
-
-There allows to not track the dist folder in the git repo.
 
 `npm run deploy`
+
+The script will bundle and commit the subtree located in `/dist` onto Github Pages via gh-pages branch
+
 
 # Development 
 
@@ -32,16 +32,28 @@ Install dependencies being in the cloned folder `vulpemcom`
 npm i
 ```
 
-### Run a local server 
+### Watch & Reload
 
 ```
-npm start 
+npm start
+```
+
+### Serve locally
+
+```
+npm run serve
 ```
 
 ### Bundle for production
 
 ```
 npm run bundle
+```
+
+### Generate styleguide
+
+```
+npm run styleguid
 ```
 
 ### Build SCSS into CSS
@@ -56,14 +68,9 @@ Import each new file created in the **src/scss/style.scss** file
 
 Run the build script in the root folder
 ```
-npm run build
+node_modules/.bin/gulp scss-to-css
 ```
 
 The compiled css are in the `./src/css` folder
-
-If you want to automatically watch changes in your scss file and automatically re-build on save
-```
-npm run watch
-```
 
 

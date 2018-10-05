@@ -2,153 +2,191 @@
 <html>
 
 <head>
-  <title> Vulpem </title>
+  <title> Vulpem Ventures </title>
   <meta charset="UTF-8">
-  <meta name="description" content="A distributed team of software engineers, cryptographers and technologists passionated about self sovereignty, privacy and operational security.">
+  <meta name="description" content="Technology R&D lab focused on cybersecurity of digital assets">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#171615">
+  <meta name="msapplication-TileColor" content="#181f1f">
+  <meta name="theme-color" content="#ffffff">
+  <!-- build:css css/combined.css -->
+  <link rel="stylesheet" href="./css/vendors.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- endbuild -->
 </head>
 
 <body>
-  <div class="main black">
-
-    <!-- Header -->
-    <div class="header scroll">
-
-      <ul class="menu" role="navigation">
-        <li class="logo">
-          <img src="./images/logo/100x86.png">
-        </li>
-        <li class="menu-item">
-          <a href="./security.html"> Security </a>
-        </li>
-        <li class="menu-item">
-          <a href="./products.html"> Products </a>
-        </li>
-        <!-- <li class="menu-item">
-          <a href="./case-studies.html"> Case Studies </a>
-        </li> -->
-        <li class="menu-item menu-item-box">
-          <a href="#" class="menu-item-box-content">CONTACT US</a>
-        </li>
-      </ul>
-
-      <div class="masthead centered">
-        <div class="slider">
-          <div class="post active" data-number="1">
-            <div class="post-title">Driving forward the security of digital assets</div>
-            <div class="post-type">
-              <div class="left-line"></div>
-              <div>From smart contraxct security audit to infrastructure penetration testing. We got you covered</div>
+  <aside class="menu is-hidden-desktop navbar-menu-mobile is-opacity">
+    <ul class="menu-list">
+      <li class="menu-list-item"><a href="./security.html">Security</a></li>
+      <li class="menu-list-item"><a href="./products.html">Products</a></li>
+      <!-- <li class="menu-list-item"><a href="./case-studies.html">Case Studies</a></li> -->
+      <li class="menu-list-item">
+        <button class="contact-us button btn-o btn-o-white is-uppercase">Contact us</button>
+      </li>
+    </ul>
+  </aside>
+  <div class="header">
+    <nav class="navbar navbar-fixed" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item navbar-brand-logo" href="/">
+            <img src="./images/logo/100x86.png">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a href="./security.html" class="navbar-item">Security</a>
+            <a href="./products.html" class="navbar-item">Products</a>
+            <!-- <a href="./case-studies.html" class="navbar-item">Case Studies</a> -->
+            <button class="contact-us navbar-item button btn-o btn-o-white is-uppercase">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header-content">
+        <h2 class="title title-lg is-spaced header-title-lg">Driving Crypto Security Forward.</h2>
+        <div class="subtitle subtitle-left-border header-subtitle">Vulpem offers a full array of solutions and services
+          to audit, secure and store
+          cryptographically-signed digital assets.</div>
+        <div class="scroll-down">
+          <a href="#info-section1" class="scroll-down-link">
+            <span class="subtitle subtitle-link scroll-down-text">SCROLL DOWN</span>
+            <button class="button icon scroll-down-button">
+              <i class="scroll-down-button-icon"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="info-section1" class="info-section">
+    <div class="container">
+      <div class="info-section-content">
+        <div class="subtitle subtitle-left-border info-section-subtitle-top">What we do</div>
+        <h2 class="title title-lg is-spaced info-section-title-lg">We have secured and audited USD 300+ million worth
+          of digital assets.</h2>
+        <div class="subtitle info-section-subtitle-bottom">We are constantly innovating in design and implementing
+          cutting edge, gold standards security solutions</div>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-gapless images-section">
+    <div class="column images-section-item">
+      <img class="images-section-item-image" src="./images/security-audit-image.jpg">
+      <div class="images-section-item-content">
+        <div class="title images-section-item-title images-section-item-title-bordered">Infrastructure Audit</div>
+        <div class="subtitle images-section-item-subtitle">If your website gets hacked, your downside can be limitless.
+          We secure IT infrastructure against high volume attackers.
+        </div>
+      </div>
+    </div>
+    <div class="column images-section-item">
+      <img class="images-section-item-image" src="./images/smart-contract-audit.jpg">
+      <div class="images-section-item-content">
+        <div class="title images-section-item-title images-section-item-title-bordered">Smart Contract Audit</div>
+        <div class="subtitle images-section-item-subtitle">Your smart contract is the key to the decentralized
+          ecosystem. We audit your contracts and ensure they are locked tight, from code to the token economics.</div>
+      </div>
+    </div>
+    <div class="column images-section-item">
+      <img class="images-section-item-image" src="./images/tech-review.jpg">
+      <div class="images-section-item-content">
+        <div class="title images-section-item-title images-section-item-title-bordered">Technology Review</div>
+        <div class="subtitle images-section-item-subtitle">We've been working with distributed databases, consensus
+          mechanisms, and niche cryptographic applications since 3 January 2009 . We'll ensure that your technology is
+          as functional as possible.</div>
+      </div>
+    </div>
+  </div>
+  <div class="info-section info-section-light">
+    <div class="container">
+      <div class="info-section-content info-section-large content-black">
+        <h2 class="title title-lg is-spaced info-section-title-lg">Clients and partners</h2>
+        <div class="columns company-list info-section-company-list">
+          <div class="column company-list-item">
+            <img class="company-list-item-image" src="./images/company1.png">
+          </div>
+          <div class="column company-list-item">
+            <img class="company-list-item-image" src="./images/company2.png">
+          </div>
+          <div class="column company-list-item">
+            <img class="company-list-item-image" src="./images/company3.png">
+          </div>
+          <div class="column company-list-item">
+            <img class="company-list-item-image" src="./images/company4.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="footer-logo">
+            <img class="footer-logo-image" src="./images/logo/100x86.png">
+            <div class="footer-logo-text">Driving Crypto Security Forward</div>
+          </div>
+        </div>
+        <div class="column footer-right-column">
+          <div class="footer-slogan">“A distributed team of software engineers, cryptographers and technologists
+            passionated about self sovereignty, privacy and operational security.”</div>
+          <div class="columns">
+            <div class="column footer-address-column">
+              <div class="footer-title">Headquarter</div>
+              <div class="footer-address">—— <br> Sepapaja tn 6 <br> 15551 Tallinn <br> Estonia</div>
+            </div>
+            <div class="column">
+              <div class="footer-title">Send us a message</div>
+              <a class="link link-underline" href="mailto:hello@vulpem.com">hello@vulpem.com</a>
+            </div>
+            <div class="column footer-social-column">
+              <div class="footer-title">Social</div>
+              <div class="footer-social-container">
+                <a class="link link-underline footer-social-link" href="https://github.com/vulpemventures/">Github</a>
+                <a class="link link-underline footer-social-link" href="https://twitter.com/vulpemventures">Twitter</a>
+                <a class="link link-underline footer-social-link" href="https://instagram.com/vulpemventures/">Instagram</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content white">
-
-      <div class="chapter-line">
-        <div class="left-line-black"></div>
-        <div>Intro</div>
-      </div>
-
-      <div class="intro-panel white">
-        <div class="intro-panel-content">
-          <h1> Secured more than $150 Millions </h1>
-          <div class="intro-text">
-            We help companies and large organizations to secure their blockchain-based assets, with a a wide array of open source protocols
-            and custom applications.
-            <br />
-            <br /> Since 2015 we are dedicated to make safe and user friendly the management of cryptocurrencies.
-            <br /> We believe both in
-            <b>trust minimization</b> and
-            <b>human oriented design</b>.
-            <br />
-            <br /> We are working on the fundamental tools and the open infrastracture needed for the future mass adoption.
+      <div class="columns footer-bottom">
+        <div class="column">
+          <div class="copyright">© VULPEM VENTURES OÜ (LLC)</div>
+          <div class="copyright-small">All right reserved.</div>
+        </div>
+        <div class="column footer-right-column">
+          <div class="columns">
+            <div class="column footer-address-column">
+              <a class="link link-underline" href="#">PRIVACY POLICY</a>
+            </div>
+            <div class="column">
+              <a class="link link-underline" href="mailto:job@vulpem.com">WANT TO WORK WITH US?</a>
+            </div>
+            <div class="column"></div>
           </div>
         </div>
       </div>
-
-      <div class="logo-gallery">
-        <div class="logo-gallery-panel" style="background-color: red; height: 145px; min-width: 200px;">
-        </div>
-        <div class="logo-gallery-panel" style="background-color: yellow; height: 145px; min-width: 200px;">
-        </div>
-        <div class="logo-gallery-panel" style="background-color: blue; height: 145px; min-width: 200px;">
-        </div>
-      </div>
-
-      <div class="cta">
-        <div class="cta-text">
-          Have a big project? We love innovation.
-        </div>
-        <div class="cta-button">Contact us</div>
-      </div>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <div class="vulpem-logo">
-        <div class="vulpem-logo-img">
-        </div>
-        <div class="vulpem-motto">
-          Vulpem pilum mutare, non mores
-        </div>
-      </div>
-      <div class="quotation">
-        A distributed team of software engineers, cryptographers and technologists passionated about self sovereignty, privacy and
-        operational security.
-      </div>
-      <div class="info-office">
-        <div class="office">
-          <h1 class="info-title">Office</h1>
-          <div class="left-line-small"></div> North Europe
-          <p>Sepapaja tn 6</p>
-          <p>15551 Tallinn</p>
-          <p>Estonia</p>
-        </div>
-        <div class="office">
-          <div class="left-line-small"></div> South Europe
-          <p>Via Friuli 72</p>
-          <p>20135 Milano</p>
-          <p>Italy</p>
-        </div>
-      </div>
-      <div class="info-message">
-        <h1 class="info-title">Send us a message</h1>
-        <a class="underlined" href="mailto:hello@vulpem.com">hello@vulpem.com</a>
-      </div>
-      <div class="info-social">
-        <h1 class="info-title">Social</h1>
-        <p>
-          <a class="underlined" href="#">Github</a>
-        </p>
-        <p>
-          <a class="underlined" href="#">Twitter</a>
-        </p>
-        <p>
-          <a class="underlined" href="#">Instagram</a>
-        </p>
-      </div>
-
-      <div class="info-privacy-policy">
-        <a class="underlined" href="#">PRIVACY POLICY</a>
-      </div>
-      <div class="info-work">
-        <a class="underlined" href="#">WANT TO WORK WITH US?</a>
-      </div>
-      <div class="info-copyright">
-        <p>&copy; VULPEM VENTURES OU (LLC)</p>
-        <p>All rights reserved.</p>
-      </div>
-    </div>
-
   </div>
+
+  <!-- build:js js/combined.js -->
+  <script src="./js/vendors.js" type="text/javascript"></script>
+  <script src="./js/main.js" type="text/javascript"></script>
+  <!-- endbuild -->
 </body>
 
 </html>
