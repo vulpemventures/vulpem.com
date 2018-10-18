@@ -110,3 +110,20 @@
     -webkit-transform: rotate(45deg);
   }
 }
+
+.btn-action{
+  min-width: 130px;
+  height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: $color-accent;
+  border: none;
+  font-family: $font-teaser;
+  color: $white;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.btn-action-text{
+
+}

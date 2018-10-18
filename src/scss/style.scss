@@ -14,6 +14,8 @@
 @import "./lib/components/images-section.scss";
 @import "./lib/components/products-list.scss";
 @import "lib/components/footer";
+@import "lib/components/form";
+@import "lib/components/teaser-page";
 
 html,body {
   margin: 0;
@@ -26,6 +28,9 @@ body {
 .container{
   max-width: 1440px;
   width: 100%;
+}
+.teaser-container{
+  max-width: 872px;
 }
 
 a {
@@ -51,4 +56,30 @@ a {
   right: 0;
   left: 0;
   bottom: 0;
+}
+.is-center{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-wrap{
+  display: inline-block;
+  text-align: center;
+}
+.logo-image{
+  display: block;
+  margin: 0 auto;
+  max-width: 57px;
+  max-height: 50px;
+  margin-bottom: 5px;
+}
+.logo-text{
+  display: block;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 400;
+  text-align: center;
 }
