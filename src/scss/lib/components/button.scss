@@ -114,6 +114,7 @@
 .btn-action{
   min-width: 130px;
   height: 30px;
+  min-height: 30px;
   padding-top: 0;
   padding-bottom: 0;
   background-color: $color-accent;
@@ -123,7 +124,27 @@
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 2px;
+  transition: 0.5s ease-out;
+  &:hover{
+    background-color: $color-accent-light;
+  }
 }
-.btn-action-text{
 
+.btn-close{
+  color: $btn-hover-color;
+  background: transparent;
+  border: navajowhite;
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  top: 10%;
+  transition: 0.5s ease-out;
+  &:hover{
+    color: $white;
+  }
+  @include mobile{
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
