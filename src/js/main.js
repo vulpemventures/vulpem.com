@@ -43,4 +43,15 @@ $(function () {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
+
+  $(document).ready(() => {
+    console.log('page is loaded');
+    if($('.banner').length){
+      setTimeout($('.banner').addClass('banner-visible'), 10000);
+    }
+  });
+
+  $('.banner .btn-close').on('click', () => {
+    $('.banner').removeClass('banner-visible');
+  })
 });
