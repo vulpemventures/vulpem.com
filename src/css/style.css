@@ -8098,7 +8098,7 @@ label.panel-block {
     border-color: white; }
 
 .teaser-title {
-  font-family: Roboto;
+  font-family: Agan45;
   font-size: 16px;
   letter-spacing: 2px;
   color: white; }
@@ -8111,7 +8111,7 @@ label.panel-block {
   margin-bottom: 13px; }
 
 .teaser-subtitle {
-  font-family: Roboto;
+  font-family: Agan45;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 2.2px;
@@ -8390,7 +8390,7 @@ label.panel-block {
   padding-bottom: 0;
   background-color: #fb9b0b;
   border: none;
-  font-family: Roboto;
+  font-family: Agan45;
   color: white;
   font-size: 12px;
   font-weight: 400;
@@ -9323,7 +9323,7 @@ label.panel-block {
 .input-primary::-webkit-input-placeholder {
   color: #2e3742;
   font-size: 12px;
-  font-family: Roboto;
+  font-family: Agan45;
   font-weight: 300;
   letter-spacing: 2.5px;
   line-height: 20px; }
@@ -9331,7 +9331,7 @@ label.panel-block {
 .input-primary::-moz-placeholder {
   color: #2e3742;
   font-size: 12px;
-  font-family: Roboto;
+  font-family: Agan45;
   font-weight: 300;
   letter-spacing: 2.5px;
   line-height: 20px; }
@@ -9339,7 +9339,7 @@ label.panel-block {
 .input-primary:-ms-input-placeholder {
   color: #2e3742;
   font-size: 12px;
-  font-family: Roboto;
+  font-family: Agan45;
   font-weight: 300;
   letter-spacing: 2.5px;
   line-height: 20px; }
@@ -9347,7 +9347,7 @@ label.panel-block {
 .input-primary:-moz-placeholder {
   color: #2e3742;
   font-size: 12px;
-  font-family: Roboto;
+  font-family: Agan45;
   font-weight: 300;
   letter-spacing: 2.5px;
   line-height: 20px; }
@@ -9386,7 +9386,7 @@ label.panel-block {
 
 .teaser {
   background-color: #556472;
-  font-family: Roboto;
+  font-family: Agan45;
   position: relative;
   min-height: 100vh; }
   @media screen and (max-width: 768px) {
@@ -9516,7 +9516,7 @@ label.panel-block {
   bottom: -100%;
   right: 0;
   left: 0;
-  font-family: Roboto;
+  font-family: Agan45;
   z-index: 2;
   -webkit-transition: 1s ease-out;
   transition: 1s ease-out; }
