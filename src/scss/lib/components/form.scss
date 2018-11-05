@@ -1,0 +1,63 @@
+.input-primary{
+  background-color: $teaser-color-light;
+  height: 30px;
+  padding-left: 14px;
+}
+.input-primary::-webkit-input-placeholder {
+  color: $teaser-color-dark;
+  font-size: 12px;
+  font-family: $font-teaser;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  line-height: 20px;
+}
+.input-primary::-moz-placeholder {
+  color: $teaser-color-dark;
+  font-size: 12px;
+  font-family: $font-teaser;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  line-height: 20px;
+}
+.input-primary:-ms-input-placeholder {
+  color: $teaser-color-dark;
+  font-size: 12px;
+  font-family: $font-teaser;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  line-height: 20px;
+}
+.input-primary:-moz-placeholder {
+  color: $teaser-color-dark;
+  font-size: 12px;
+  font-family: $font-teaser;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  line-height: 20px;
+}
+
+.input-primary:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.input-primary:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.input-primary:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.input-primary:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-primary{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}

@@ -1,0 +1,95 @@
+.banner {
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  left: 0;
+  font-family: $font-teaser;
+  z-index: 2;
+  transition: 1s ease-out;
+  @include mobile {
+    width: 100%;
+    height: 100%;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/banner-bg.png);
+    @include mobile{
+      background-color: rgba(0, 0, 0, 0.95);
+      //background-image: url(../images/banner-bg.png);
+      //background-repeat: no-repeat;
+      //background-size: cover;
+      background-image: none;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 17%;
+    padding-right: 80px;
+    height: 100px;
+    @media screen and (min-width: 1600px) {
+      padding-left: 10%;
+    }
+    @include mobile {
+      flex-direction: column;
+      min-height: 100%;
+      padding: 15% 15% 10%;
+    }
+  }
+  .banner-bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+  .banner-img {
+    width: 100px;
+    height: 140px;
+    bottom: 20px;
+    position: relative;
+    margin: 0 30px;
+    @include mobile {
+      width: auto;
+      height: auto;
+      //zoom: 1.5;
+    }
+    @media screen and (orientation: landscape) and (max-height: 700px) and (max-width: 768px) {
+      display: none;
+    }
+  }
+  .banner-title {
+    color: $teaser-color-light;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    flex-grow: 0.5;
+    @include mobile {
+      text-align: center;
+      flex-grow: 0;
+      font-size: 18px;
+    }
+  }
+  .banner-btn {
+    width: 20%;
+    height: 35px;
+    flex-grow: 0.5;
+    max-width: 285px;
+    @include mobile {
+      flex-grow: 0;
+      width: 80%;
+      max-width: 80%;
+    }
+  }
+}
+
+.banner-visible {
+  bottom: 0;
+}
