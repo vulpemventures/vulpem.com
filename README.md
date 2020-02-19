@@ -32,12 +32,6 @@ Install dependencies being in the cloned folder `vulpemcom`
 npm i
 ```
 
-### Watch & Reload
-
-```
-npm start
-```
-
 ### Serve locally
 
 ```
@@ -47,13 +41,7 @@ npm run serve
 ### Bundle for production
 
 ```
-npm run bundle
-```
-
-### Generate styleguide
-
-```
-npm run styleguid
+npm run build
 ```
 
 ### Build SCSS into CSS
@@ -68,7 +56,7 @@ Import each new file created in the **src/scss/style.scss** file
 
 Run the build script in the root folder
 ```
-node_modules/.bin/gulp scss-to-css
+npm run scss
 ```
 
 The compiled css are in the `./src/css` folder
