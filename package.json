@@ -1,13 +1,10 @@
 {
   "name": "vulpem.com",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Vulpem Ventures Main Website",
   "scripts": {
-    "postcss": "npx postcss -u autoprefixer -r src/css/*",
-    "scss": "npx node-sass --output-style compressed -o src/css src/scss/style.scss",
     "serve": "npx parcel --no-cache --port 8080 src/index.html",
-    "build-css": "npm run scss && npm run postcss",
-    "build": "npm run build-css && npx parcel build --no-cache src/index.html",
+    "build": "npx parcel build src/index.html",
     "deploy": "npx cpx CNAME dist && npx push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
@@ -21,16 +18,10 @@
   "author": "Vulpem Ventures",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "bulma": "^0.8.0",
     "cpx": "^1.5.0",
-    "parcel-bundler": "^1.12.4",
-    "particles.js": "^2.0.0",
-    "postcss-cli": "^7.1.0",
-    "push-dir": "^0.4.1",
-    "sass": "^1.25.0"
+    "push-dir": "^0.4.1"
   },
   "dependencies": {
-    "jquery": "^3.5.0"
+    "parcel-bundler": "^1.12.4"
   }
 }

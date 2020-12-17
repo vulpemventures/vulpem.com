@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1106" height="469" viewBox="0 0 1106 469">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-167 -852) translate(167 852) translate(968 188)">
+                        <rect width="65.52" height="65.52" fill="#00D0CC" fill-rule="nonzero" rx="18.144"/>
+                        <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.016">
+                            <g>
+                                <path d="M5.524 5.333H0v16C0 22.438.467 24 2.762 24h23.476C27.382 24 29 22.769 29 21.333V0H5.524v21.333c0 1.105-.895 2.667-2.762 2.667" transform="translate(18 21)"/>
+                            </g>
+                            <path d="M11 5H24V11H11zM11 16L24 16" transform="translate(18 21)"/>
+                        </g>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#FF5456" fill-rule="nonzero" transform="translate(-167 -852) translate(167 852) translate(82 419)">
+                        <rect width="49.14" height="49.14" rx="13.608"/>
+                    </g>
+                    <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.421">
+                        <g>
+                            <path d="M2 0L0 2.8v9.8c0 .773.597 1.4 1.333 1.4h9.334c.736 0 1.333-.627 1.333-1.4V2.8L10 0H2zM0 2.8L12 2.8" transform="translate(-167 -852) translate(167 852) translate(82 419) translate(19 18)"/>
+                            <path d="M8.667 5.6c0 1.546-1.194 2.8-2.667 2.8-1.473 0-2.667-1.254-2.667-2.8" transform="translate(-167 -852) translate(167 852) translate(82 419) translate(19 18)"/>
+                        </g>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#00D577" fill-rule="nonzero" transform="translate(-167 -852) translate(167 852) translate(0 65)">
+                        <rect width="81.9" height="81.9" rx="22.68"/>
+                    </g>
+                    <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.034">
+                        <path d="M0 26.25c0-2.071 1.679-3.75 3.75-3.75H24" transform="translate(-167 -852) translate(167 852) translate(0 65) translate(29 26)"/>
+                        <path d="M3.75 0H24v30H3.75C1.679 30 0 28.321 0 26.25V3.75C0 1.679 1.679 0 3.75 0z" transform="translate(-167 -852) translate(167 852) translate(0 65) translate(29 26)"/>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#B086FF" fill-rule="nonzero" transform="translate(-167 -852) translate(167 852) translate(1048 411)">
+                        <rect width="57.33" height="57.33" rx="15.876"/>
+                    </g>
+                    <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.016">
+                        <path d="M10 17L17 10 21.408 14 14.408 21z" transform="translate(-167 -852) translate(167 852) translate(1048 411) translate(19 19)"/>
+                        <path d="M16 11L14.5 3.5 0 0 3.5 14.5 11 16zM0 0L7.586 7.586" transform="translate(-167 -852) translate(167 852) translate(1048 411) translate(19 19)"/>
+                    </g>
+                </g>
+                <g>
+                    <g fill="#FF9C54" fill-rule="nonzero" transform="translate(-167 -852) translate(167 852) translate(978)">
+                        <rect width="81.9" height="81.9" rx="22.68"/>
+                    </g>
+                    <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.016">
+                        <path d="M24.242 14.883l-9.35 9.352c-.49.49-1.153.765-1.845.765-.693 0-1.356-.275-1.846-.765L0 13.044V0h13.04l11.202 11.204c1.01 1.018 1.01 2.661 0 3.679zM6.619 6.625L10.369 10.375" transform="translate(-167 -852) translate(167 852) translate(978) translate(29 29)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
