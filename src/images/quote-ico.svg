@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41">
+    <defs>
+        <linearGradient id="dws9tz8c7a" x1="41.28%" x2="60.853%" y1="-1.017%" y2="100.575%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#CCBED5"/>
+        </linearGradient>
+        <linearGradient id="p6u8fbajub" x1="33.513%" x2="70.52%" y1="-1.017%" y2="100.575%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#CCBED5"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g transform="translate(-636 -1235) translate(636 1185) translate(0 50)">
+                        <rect width="41" height="41" fill="#333334" rx="20.5"/>
+                        <g stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <g>
+                                <g transform="translate(8 13)">
+                                    <path stroke="url(#dws9tz8c7a)" d="M8 0C3.582 0 0 3.87 0 8.643V11"/>
+                                    <circle cx="5" cy="10" r="5" stroke="url(#p6u8fbajub)"/>
+                                    <path stroke="url(#dws9tz8c7a)" d="M22 0c-4.418 0-8 3.87-8 8.643V11"/>
+                                    <circle cx="19" cy="10" r="5" stroke="url(#p6u8fbajub)"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

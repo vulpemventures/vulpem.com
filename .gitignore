@@ -1,7 +1,7 @@
 # NodeJS
 node_modules/
 
-# DS Store mac 
+# DS Store mac
 .DS_Store
 
 # Build folder
@@ -22,3 +22,5 @@ dist
 
 # Vendors
 vendors.*
+
+*.log
