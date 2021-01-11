@@ -553,7 +553,7 @@ figcaption {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(42%, transparent), color-stop(53%, #fff), color-stop(56%, #83d7bd), color-stop(81%, #3b8bf5)), -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
   background-image: linear-gradient(90deg, transparent 42%, #fff 53%, #83d7bd 56%, #3b8bf5 81%), linear-gradient(180deg, #fff, #fff);
   font-family: 'Agan 45', sans-serif;
-  color: #304d3f;
+  color: #fdfffc;
   font-size: 54px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1675,7 +1675,6 @@ figcaption {
 .section-hero-home {
   position: relative;
   height: auto;
-  background-image: none;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
 }
