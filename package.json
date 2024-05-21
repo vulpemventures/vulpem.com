@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "npx parcel --no-cache --port 8080 src/index.html",
     "build": "npx parcel build src/index.html",
-    "prepare": "npx cpx CNAME dist && npx cpx bitcoin.pdf dist && npx cpx synthetic-asset-smart-contract.pdf dist && mkdir -p dist/.well-known && npx cpx nostr.json dist/.well-known/",
+    "prepare": "npx cpx CNAME dist && npx cpx bitcoin.pdf dist && npx cpx synthetic-asset-smart-contract.pdf dist && mkdir -p dist/.well-known && npx cpx nostr.json dist/.well-known/ && npx cpx _config.yml dist",
     "deploy": "yarn prepare && npx push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
