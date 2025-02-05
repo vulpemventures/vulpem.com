@@ -2129,7 +2129,7 @@ figcaption {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  align-items: stretch;
+  place-items: stretch center;
   width: 100%;
   height: 100%;
   display: grid;
